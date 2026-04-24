@@ -11,22 +11,29 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
     rel="stylesheet"
   />
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <!-- Header and browsing shortcuts -->
   <header class="site-header">
     <div class="top-strip">
-      <p><strong>Free next-day UK delivery over GBP 25</strong> with discreet packaging</p>
-      <div class="top-strip-links">
-        <a href="#" aria-label="Track order">Track Order</a>
-        <a href="#" aria-label="Customer support">Help Centre</a>
+      <div class="container top-strip-inner">
+        <p>
+          <svg class="icon icon-inline" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 7h10v8H3zM13 10h3l3 3v2h-6zM7 18a2 2 0 1 0 0 .01M17 18a2 2 0 1 0 0 .01" />
+          </svg>
+          <strong>Free next-day UK delivery over GBP 25</strong> with discreet packaging
+        </p>
+        <div class="top-strip-links">
+          <a href="#">Track Order</a>
+          <a href="#">Help Centre</a>
+        </div>
       </div>
     </div>
-    <div class="header-main container">
+
+    <div class="container header-main">
       <a class="brand" href="#" aria-label="Fiveways Pharmacy home">
         <img
           class="brand-logo"
@@ -43,403 +50,409 @@
           placeholder="Search medicine, vitamins, skincare, baby care..."
           aria-label="Search products"
         />
-        <button type="submit">Search</button>
+        <button type="submit">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14ZM20 20l-4-4" />
+          </svg>
+          <span>Search</span>
+        </button>
       </form>
 
       <nav class="header-actions" aria-label="User actions">
-        <a href="#">Login</a>
-        <a href="#">Wishlist</a>
-        <a href="#" class="cart-pill" aria-label="Shopping cart with 2 items">
-          Cart
-          <span>2</span>
+        <a href="#">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM4 20a8 8 0 0 1 16 0" />
+          </svg>
+          <span>Login</span>
+        </a>
+        <a href="#">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.7A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+          </svg>
+          <span>Wishlist</span>
+        </a>
+        <a href="#" class="cart-link" aria-label="Shopping cart with 2 items">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 5h2l2 10h10l2-7H7M10 19a1.5 1.5 0 1 0 0 .01M18 19a1.5 1.5 0 1 0 0 .01" />
+          </svg>
+          <span>Cart</span>
+          <span class="cart-count">2</span>
         </a>
       </nav>
     </div>
-    <nav class="category-nav container" aria-label="Main categories">
-      <a href="#">Prescriptions</a>
-      <a href="#">Pain Relief</a>
-      <a href="#">Cold & Flu</a>
-      <a href="#">Vitamins</a>
-      <a href="#">Baby & Mum</a>
-      <a href="#">Skincare</a>
-      <a href="#">Travel Health</a>
+
+    <nav class="container category-nav" aria-label="Main categories">
+      <a href="#" class="nav-pill">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M9 12 4 17a3 3 0 0 0 4 4l5-5M15 12l5-5a3 3 0 1 0-4-4l-5 5M8 16l8-8" />
+        </svg>
+        <span>Prescriptions</span>
+      </a>
+      <a href="#" class="nav-pill">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 5v14M5 12h14" />
+        </svg>
+        <span>Pain Relief</span>
+      </a>
+      <a href="#" class="nav-pill">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m12 3 1.2 2.6L16 4.8l-.8 2.8L18 9l-2.8.8L16 12l-2.8-.8L12 14l-.8-2.8L8 12l.8-2.2L6 9l2.8-1.4L8 4.8l2.8.8Z" />
+        </svg>
+        <span>Cold &amp; Flu</span>
+      </a>
+      <a href="#" class="nav-pill">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 20c4-4 5-8 5-11a5 5 0 0 0-10 0c0 3 1 7 5 11Z" />
+        </svg>
+        <span>Vitamins</span>
+      </a>
+      <a href="#" class="nav-pill">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM16 14a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM6 21v-2a4 4 0 0 1 4-4M14 21v-2a4 4 0 0 1 4-4" />
+        </svg>
+        <span>Baby &amp; Mum</span>
+      </a>
+      <a href="#" class="nav-pill">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 4c3 3.4 5 6 5 8.6A5 5 0 0 1 7 12.6C7 10 9 7.4 12 4Z" />
+        </svg>
+        <span>Skincare</span>
+      </a>
+      <a href="#" class="nav-pill">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 15h6l4 6 2-6h6M13 9l2-4 6-2-2 6-4 2-8 2 2-8 2-2" />
+        </svg>
+        <span>Travel Health</span>
+      </a>
     </nav>
-    <div class="quick-nav container" aria-label="Popular shortcuts">
+
+    <div class="container quick-nav" aria-label="Popular shortcuts">
       <p>Quick picks:</p>
-      <a href="#" class="quick-pill quick-pill--featured">Hayfever</a>
-      <a href="#">Children's medicines</a>
-      <a href="#">Gut health</a>
-      <a href="#">Sleep support</a>
-      <a href="#">Blood pressure monitors</a>
+      <a href="#" class="quick-pill quick-pill-featured">Hayfever</a>
+      <a href="#" class="quick-pill">Children&apos;s medicines</a>
+      <a href="#" class="quick-pill">Gut health</a>
+      <a href="#" class="quick-pill">Sleep support</a>
+      <a href="#" class="quick-pill">Blood pressure monitors</a>
     </div>
   </header>
 
-  <main>
-    <!-- Hero: service-first pharmacy search and visual -->
-    <section class="hero container">
-      <div class="hero-copy">
-        <span class="kicker">Trusted local pharmacy services online</span>
-        <h1>Pharmacy support made simple, from services to everyday care</h1>
-        <p>
-          Book pharmacy services, manage prescriptions and find trusted health
-          products with clear guidance from Fiveways Pharmacy.
-        </p>
-        <div class="hero-tags" aria-label="Shopping highlights">
-          <span>Pharmacist support</span>
-          <span>NHS and private services</span>
-          <span>Fast UK dispatch</span>
-        </div>
-        <form class="hero-search" role="search" aria-label="Hero search">
-          <input
-            type="search"
-            placeholder="Search services, prescriptions, pain relief, vitamins..."
-            aria-label="Search hero products"
-          />
-          <button type="submit">Search</button>
-        </form>
-        <div class="hero-cta">
-          <a href="#" class="btn btn-primary">Book a pharmacy service</a>
-          <a href="#" class="cta-text">Shop health essentials</a>
-        </div>
-        <div class="hero-stats" aria-label="Service highlights">
-          <article>
-            <strong>7 Services</strong>
-            <span>Book online</span>
-          </article>
-          <article>
-            <strong>4.8/5</strong>
-            <span>Verified rating</span>
-          </article>
-          <article>
-            <strong>Next Day</strong>
-            <span>UK delivery option</span>
-          </article>
-        </div>
+  <main class="page-main">
+    <section class="hero-layout container">
+      <div class="hero-column">
+        <article class="hero-panel">
+          <div class="hero-copy">
+            <span class="hero-eyebrow">Trusted UK online pharmacy</span>
+            <h1>Health essentials delivered with pharmacy-level confidence</h1>
+            <p>
+              Shop medicines, wellness and family care in minutes with clear search,
+              trusted products and dependable support from Fiveways Pharmacy.
+            </p>
+
+            <div class="hero-benefits" aria-label="Shopping highlights">
+              <article class="hero-benefit">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3 5 6v5c0 4.4 2.8 7.9 7 10 4.2-2.1 7-5.6 7-10V6l-7-3ZM9 12l2 2 4-4" />
+                </svg>
+                <div>
+                  <strong>Clinically trusted</strong>
+                  <span>brands</span>
+                </div>
+              </article>
+              <article class="hero-benefit">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3 7h10v8H3zM13 10h3l3 3v2h-6zM7 18a2 2 0 1 0 0 .01M17 18a2 2 0 1 0 0 .01" />
+                </svg>
+                <div>
+                  <strong>Fast UK</strong>
+                  <span>dispatch</span>
+                </div>
+              </article>
+              <article class="hero-benefit">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m12 4 7 4v8l-7 4-7-4V8l7-4ZM9 11h6M9 14h3" />
+                </svg>
+                <div>
+                  <strong>Clear</strong>
+                  <span>pricing</span>
+                </div>
+              </article>
+            </div>
+
+            <form class="hero-search" role="search" aria-label="Hero search">
+              <input
+                type="search"
+                placeholder="Find products quickly: pain relief, vitamins, skincare..."
+                aria-label="Find products quickly"
+              />
+              <button type="submit">Find products</button>
+            </form>
+
+            <div class="hero-actions">
+              <a href="#" class="btn-primary">Shop now</a>
+              <a href="#" class="text-link">
+                <span>Browse all categories</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <section class="category-section" aria-labelledby="category-title">
+          <div class="section-head">
+            <h2 id="category-title">Shop by category</h2>
+            <a href="#" class="section-link">
+              <span>View all categories</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+
+          <div class="category-grid">
+            <a href="#" class="category-card">
+              <div class="category-card-media">
+                <img src="./Piill.png" alt="Pain relief capsule" width="330" height="330" />
+              </div>
+              <div class="category-card-copy">
+                <strong>Pain Relief</strong>
+                <span aria-hidden="true">&rarr;</span>
+              </div>
+            </a>
+            <a href="#" class="category-card">
+              <div class="category-card-media">
+                <img src="./Tissue.png" alt="Cold and flu tissues" width="542" height="542" />
+              </div>
+              <div class="category-card-copy">
+                <strong>Cold &amp; Flu</strong>
+                <span aria-hidden="true">&rarr;</span>
+              </div>
+            </a>
+            <a href="#" class="category-card">
+              <div class="category-card-media category-card-media-bottle">
+                <img src="./pill bottle.png" alt="Vitamin bottle" width="1024" height="1024" />
+              </div>
+              <div class="category-card-copy">
+                <strong>Vitamins</strong>
+                <span aria-hidden="true">&rarr;</span>
+              </div>
+            </a>
+            <a href="#" class="category-card">
+              <div class="category-card-media">
+                <img src="./Cream.png" alt="Skincare cream" width="436" height="436" />
+              </div>
+              <div class="category-card-copy">
+                <strong>Skincare</strong>
+                <span aria-hidden="true">&rarr;</span>
+              </div>
+            </a>
+            <a href="#" class="category-card">
+              <div class="category-card-media">
+                <img src="./Duck.png" alt="Baby and mum category duck icon" width="355" height="355" />
+              </div>
+              <div class="category-card-copy">
+                <strong>Baby &amp; Mum</strong>
+                <span aria-hidden="true">&rarr;</span>
+              </div>
+            </a>
+            <a href="#" class="category-card">
+              <div class="category-card-media">
+                <img src="./Suitcase.png" alt="Travel health suitcase" width="427" height="447" />
+              </div>
+              <div class="category-card-copy">
+                <strong>Travel Health</strong>
+                <span aria-hidden="true">&rarr;</span>
+              </div>
+            </a>
+          </div>
+        </section>
       </div>
-      <div class="hero-visual" aria-label="Illustration of online pharmacy services">
-        <img
-          class="hero-scene"
-          src="./1.png"
-          alt="Pharmacy products displayed with soft medical styling"
-          width="1773"
-          height="887"
-        />
-        <div class="visual-card pharmacy-card">
-          <span>Fiveways</span>
-          <strong>Service bookings, prescriptions and trusted care</strong>
-        </div>
-        <div class="visual-badge badge-booking">
-          <strong>Book</strong>
-          <span>Travel health, blood pressure checks, consultations</span>
-        </div>
-        <div class="visual-badge badge-dispatch">
-          <strong>Fast dispatch</strong>
-          <span>Everyday essentials shipped quickly across the UK</span>
-        </div>
-        <a href="#" class="hero-service-cta">Book a pharmacy service</a>
-      </div>
+
+      <aside class="hero-side" aria-label="Pharmacy service highlights">
+        <article class="service-spotlight">
+          <div class="service-spotlight-head">
+            <div class="service-icon-disc">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 4h8M8 7H6v13h12V7h-2M9 2h6v5H9zM9 11h6M9 15h4" />
+              </svg>
+            </div>
+            <div>
+              <p class="service-label">Prescription services</p>
+              <h2>Manage repeats without the hassle</h2>
+            </div>
+          </div>
+          <p class="service-copy">
+            Request support, upload details and track updates from your account in a simple flow.
+          </p>
+          <a href="#" class="service-button">
+            <span>Start request</span>
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </article>
+
+        <article class="support-card">
+          <div class="support-icon">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 7h10v8H3zM13 10h3l3 3v2h-6zM7 18a2 2 0 1 0 0 .01M17 18a2 2 0 1 0 0 .01" />
+            </svg>
+          </div>
+          <div>
+            <h3>Fast dispatch</h3>
+            <p>Order before 2pm for same-day dispatch Monday to Friday.</p>
+          </div>
+        </article>
+
+        <article class="support-card">
+          <div class="support-icon">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM4 20a8 8 0 0 1 16 0" />
+            </svg>
+          </div>
+          <div>
+            <h3>Qualified support</h3>
+            <p>Friendly pharmacy team support for safe product guidance.</p>
+          </div>
+        </article>
+
+        <article class="support-card">
+          <div class="support-icon">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m12 3 7 4v10l-7 4-7-4V7l7-4ZM5 7l7 4 7-4M12 11v10" />
+            </svg>
+          </div>
+          <div>
+            <h3>Discreet packaging</h3>
+            <p>All orders are discreetly packed for your privacy.</p>
+          </div>
+        </article>
+
+        <article class="support-card">
+          <div class="support-icon">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3 5 6v5c0 4.4 2.8 7.9 7 10 4.2-2.1 7-5.6 7-10V6l-7-3ZM9 12l2 2 4-4" />
+            </svg>
+          </div>
+          <div>
+            <h3>Trusted products</h3>
+            <p>We stock clinically trusted brands and genuine products.</p>
+          </div>
+        </article>
+      </aside>
     </section>
 
-    <!-- Service-first booking section -->
-    <section class="section service-section container">
-      <div class="section-head service-head">
-        <div>
-          <span class="section-kicker">Services first</span>
-          <h2>Pharmacy services made simple</h2>
-        </div>
-        <a href="#">View all services</a>
+    <section class="products-section container" aria-labelledby="products-title">
+      <div class="section-head products-head">
+        <h2 id="products-title">Popular products</h2>
+        <a href="#" class="section-link">
+          <span>View all products</span>
+          <span aria-hidden="true">&rarr;</span>
+        </a>
       </div>
-      <p class="section-intro">Book the support you need quickly, with clear next steps and a pharmacy team ready to help.</p>
-      <div class="service-grid">
-        <article class="service-card reveal-card">
-          <div class="service-icon icon-first" aria-hidden="true"></div>
-          <h3>NHS Pharmacy First</h3>
-          <p>Get help for common conditions without waiting for a GP appointment.</p>
-          <a href="#">Check eligibility</a>
-        </article>
 
-        <article class="service-card service-card-featured reveal-card">
-          <div class="service-badge">FREE SERVICE</div>
-          <div class="service-icon icon-smoking" aria-hidden="true"></div>
-          <h3>Stop Smoking Clinic</h3>
-          <p>Get friendly support to help you quit smoking, with advice and a personalised quit plan.</p>
-          <a href="#">Get free support</a>
-        </article>
-
-        <article class="service-card reveal-card">
-          <div class="service-icon icon-repeat" aria-hidden="true"></div>
-          <h3>Repeat Prescriptions</h3>
-          <p>Request regular medication support with simple account-based updates.</p>
-          <a href="#">Manage repeats</a>
-        </article>
-
-        <article class="service-card reveal-card">
-          <div class="service-icon icon-travel" aria-hidden="true"></div>
-          <h3>Travel Health</h3>
-          <p>Prepare for travel with practical pharmacy advice and health essentials.</p>
-          <a href="#">Plan travel care</a>
-        </article>
-
-        <article class="service-card reveal-card">
-          <div class="service-icon icon-pressure" aria-hidden="true"></div>
-          <h3>Blood Pressure Checks</h3>
-          <p>Quick checks and helpful guidance for monitoring heart health.</p>
-          <a href="#">Book a check</a>
-        </article>
-
-        <article class="service-card reveal-card">
-          <div class="service-icon icon-vaccine" aria-hidden="true"></div>
-          <h3>Vaccinations</h3>
-          <p>Stay protected with convenient vaccination support from the pharmacy.</p>
-          <a href="#">View vaccines</a>
-        </article>
-
-        <article class="service-card reveal-card">
-          <div class="service-icon icon-consult" aria-hidden="true"></div>
-          <h3>Private Consultations</h3>
-          <p>Speak with the pharmacy team about private healthcare options.</p>
-          <a href="#">Start consultation</a>
-        </article>
-      </div>
-    </section>
-
-    <!-- Compact pharmacy reassurance strip -->
-    <section class="trust-strip container" aria-label="Pharmacy reassurance">
-      <div class="trust-pill reveal-card"><span aria-hidden="true"></span>Registered UK pharmacy</div>
-      <div class="trust-pill reveal-card"><span aria-hidden="true"></span>Secure checkout</div>
-      <div class="trust-pill reveal-card"><span aria-hidden="true"></span>Discreet packaging</div>
-      <div class="trust-pill reveal-card"><span aria-hidden="true"></span>Pharmacist support</div>
-      <div class="trust-pill reveal-card"><span aria-hidden="true"></span>Fast dispatch</div>
-    </section>
-
-    <!-- Products remain secondary to services -->
-    <section class="section container">
-      <div class="section-head">
-        <h2>Featured products</h2>
-        <a href="#">View all products</a>
-      </div>
-      <p class="section-intro">Popular picks chosen for value, reliability and everyday family use.</p>
       <div class="product-grid">
         <article class="product-card">
-          <div class="product-labels">
-            <p class="badge">Best Seller</p>
-            <p class="stock-tag">Pharmacy checked</p>
-          </div>
-          <div class="product-image">
-            <span class="product-visual product-vitamin">Vitamin C</span>
-          </div>
-          <h3>Immune Support Vitamin C 1000mg</h3>
-          <p class="product-size">60 tablets</p>
-          <p class="rating">4.8/5 (216 reviews)</p>
-          <p class="dispatch">Get it by tomorrow</p>
-          <p class="product-note">Clinically balanced daily immune support formula.</p>
+          <button class="favourite-button" type="button" aria-label="Save Omega 3 High Strength">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.7A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+            </svg>
+          </button>
+          <div class="product-thumb product-thumb-hero product-thumb-omega"></div>
+          <h3>Omega 3 High Strength</h3>
+          <p>30 softgels</p>
           <div class="product-meta">
-            <p class="price">GBP 8.99 <span>GBP 10.99</span></p>
-            <button>Add to cart</button>
+            <span>GBP 12.99</span>
           </div>
         </article>
 
         <article class="product-card">
-          <div class="product-labels">
-            <p class="badge">Value</p>
-            <p class="stock-tag">In stock</p>
-          </div>
-          <div class="product-image">
-            <span class="product-visual product-tablets">Pain Relief</span>
-          </div>
-          <h3>Ibuprofen 200mg Tablets (16)</h3>
-          <p class="product-size">1 pack</p>
-          <p class="rating">4.7/5 (402 reviews)</p>
-          <p class="dispatch">In stock</p>
-          <p class="product-note">Effective short-term pain and fever relief.</p>
+          <button class="favourite-button" type="button" aria-label="Save Vitamin D3 1000iu">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.7A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+            </svg>
+          </button>
+          <div class="product-thumb product-thumb-hero product-thumb-vitamin"></div>
+          <h3>Vitamin D3 1000iu</h3>
+          <p>60 tablets</p>
           <div class="product-meta">
-            <p class="price">GBP 2.49</p>
-            <button>Add to cart</button>
+            <span>GBP 8.99</span>
           </div>
         </article>
 
         <article class="product-card">
-          <div class="product-labels">
-            <p class="badge">Dermatology Pick</p>
-            <p class="stock-tag">Expert pick</p>
-          </div>
-          <div class="product-image">
-            <span class="product-visual product-tube">Skincare</span>
-          </div>
-          <h3>Daily Moisture SPF30 Sensitive Skin</h3>
-          <p class="product-size">50ml</p>
-          <p class="rating">4.6/5 (188 reviews)</p>
-          <p class="dispatch">Get it by tomorrow</p>
-          <p class="product-note">Lightweight hydration with broad spectrum SPF.</p>
+          <button class="favourite-button" type="button" aria-label="Save Hayfever Relief">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.7A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+            </svg>
+          </button>
+          <div class="product-thumb product-thumb-hero product-thumb-hayfever"></div>
+          <h3>Hayfever Relief Tablets</h3>
+          <p>30 tablets</p>
           <div class="product-meta">
-            <p class="price">GBP 11.50 <span>GBP 13.00</span></p>
-            <button>Add to cart</button>
+            <span>GBP 7.49</span>
           </div>
         </article>
 
         <article class="product-card">
-          <div class="product-labels">
-            <p class="badge">Seasonal Care</p>
-            <p class="stock-tag">Family essential</p>
+          <button class="favourite-button" type="button" aria-label="Save Skin Repair Cream">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.7A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+            </svg>
+          </button>
+          <div class="product-thumb">
+            <img src="./Cream.png" alt="Skin repair cream jar" width="436" height="436" />
           </div>
-          <div class="product-image">
-            <span class="product-visual product-sachet">Cold & Flu</span>
-          </div>
-          <h3>All-in-One Cold & Flu Relief Sachets</h3>
-          <p class="product-size">10 sachets</p>
-          <p class="rating">4.5/5 (129 reviews)</p>
-          <p class="dispatch">In stock</p>
-          <p class="product-note">Multi-symptom support for seasonal recovery.</p>
+          <h3>Skin Repair Daily Cream</h3>
+          <p>50ml</p>
           <div class="product-meta">
-            <p class="price">GBP 5.95</p>
-            <button>Add to cart</button>
+            <span>GBP 11.50</span>
           </div>
         </article>
-      </div>
-    </section>
 
-    <section class="section container">
-      <div class="section-head">
-        <h2>Shop by category</h2>
-        <a href="#">Browse all</a>
-      </div>
-      <p class="section-intro">Jump straight to the categories people use most often.</p>
-      <div class="category-grid">
-        <a href="#" class="category-card">
-          <span class="category-icon category-pain" aria-hidden="true"></span>
-          <h3>Pain Relief</h3>
-          <p>Tablets, gels and everyday pain support.</p>
-        </a>
-        <a href="#" class="category-card">
-          <span class="category-icon category-cold" aria-hidden="true"></span>
-          <h3>Cold & Flu</h3>
-          <p>Seasonal care, congestion and recovery essentials.</p>
-        </a>
-        <a href="#" class="category-card">
-          <span class="category-icon category-vitamins" aria-hidden="true"></span>
-          <h3>Vitamins</h3>
-          <p>Daily wellbeing, immunity and energy support.</p>
-        </a>
-        <a href="#" class="category-card">
-          <span class="category-icon category-skincare" aria-hidden="true"></span>
-          <h3>Skincare</h3>
-          <p>Gentle care, SPF and sensitive skin products.</p>
-        </a>
-        <a href="#" class="category-card">
-          <span class="category-icon category-baby" aria-hidden="true"></span>
-          <h3>Baby & Mum</h3>
-          <p>Family essentials for feeding, hygiene and care.</p>
-        </a>
-        <a href="#" class="category-card">
-          <span class="category-icon category-travel" aria-hidden="true"></span>
-          <h3>Travel Health</h3>
-          <p>Travel care, sun protection and trip essentials.</p>
-        </a>
-      </div>
-    </section>
+        <article class="product-card">
+          <button class="favourite-button" type="button" aria-label="Save Soft Care Tissues">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.7A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+            </svg>
+          </button>
+          <div class="product-thumb">
+            <img src="./Tissue.png" alt="Soft care tissues" width="542" height="542" />
+          </div>
+          <h3>Soft Care Tissues</h3>
+          <p>Family pack</p>
+          <div class="product-meta">
+            <span>GBP 3.25</span>
+          </div>
+        </article>
 
-    <section class="section trust-wrap">
-      <div class="container section-head">
-        <h2>Pharmacy reassurance</h2>
-      </div>
-      <p class="container section-intro trust-intro">Every order is backed by pharmacy standards, secure checkout and a support team that is easy to reach.</p>
-      <div class="container trust-grid">
-        <article class="trust-card">
-          <h3>Registered UK Pharmacy</h3>
-          <p>Dispensing and retail standards aligned to UK pharmacy expectations.</p>
-        </article>
-        <article class="trust-card">
-          <h3>Secure Checkout</h3>
-          <p>Protected payment flow with straightforward order tracking.</p>
-        </article>
-        <article class="trust-card">
-          <h3>Friendly Expert Team</h3>
-          <p>Support from trained pharmacy staff when you need product advice.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section container why-choose">
-      <div class="section-head">
-        <h2>Why customers choose Fiveways</h2>
-      </div>
-      <div class="why-grid">
-        <article>
-          <h3>Simple to browse</h3>
-          <p>Clear categories, quick search and straightforward product details.</p>
-        </article>
-        <article>
-          <h3>Reliable fulfilment</h3>
-          <p>Fast dispatch windows and order tracking that keeps things clear.</p>
-        </article>
-        <article>
-          <h3>Support that feels human</h3>
-          <p>Advice from a pharmacy team focused on safety and confidence.</p>
+        <article class="product-card">
+          <button class="favourite-button" type="button" aria-label="Save Travel Health Kit">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.7A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />
+            </svg>
+          </button>
+          <div class="product-thumb">
+            <img src="./Suitcase.png" alt="Travel health kit icon" width="427" height="447" />
+          </div>
+          <h3>Travel Health Kit</h3>
+          <p>Holiday essentials</p>
+          <div class="product-meta">
+            <span>GBP 14.99</span>
+          </div>
         </article>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <a class="brand footer-brand" href="#" aria-label="Fiveways Pharmacy home">
-          <img
-            class="brand-logo"
-            src="./official_logo.png"
-            alt="Five Ways Pharmacy"
-            width="300"
-            height="132"
-          />
-        </a>
-        <p>Comfortable, trusted pharmacy shopping for every household.</p>
-        <div class="footer-badges">
-          <span>Secure checkout</span>
-          <span>Registered pharmacy</span>
-        </div>
-      </div>
-      <div>
-        <h4>Shop</h4>
-        <a href="#">All products</a>
-        <a href="#">Best sellers</a>
-        <a href="#">Offers</a>
-      </div>
-      <div>
-        <h4>Support</h4>
-        <a href="#">Contact us</a>
-        <a href="#">Delivery info</a>
-        <a href="#">Returns</a>
-      </div>
-      <div>
-        <h4>Account</h4>
-        <a href="#">Login</a>
-        <a href="#">Sign up</a>
-        <a href="#">Order history</a>
-      </div>
-    </div>
-    <div class="footer-base">
-      <p>(c) 2026 Fiveways Pharmacy. All rights reserved.</p>
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#" aria-label="Fiveways Pharmacy home">
+        <img
+          class="brand-logo"
+          src="./official_logo.png"
+          alt="Five Ways Pharmacy"
+          width="300"
+          height="132"
+        />
+      </a>
+      <p>Trusted pharmacy shopping for everyday care, wellness and family essentials.</p>
     </div>
   </footer>
-  <script>
-    // Reveal service and trust cards without affecting users who prefer reduced motion.
-    const revealItems = document.querySelectorAll(".reveal-card");
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-    if (reduceMotion || !("IntersectionObserver" in window)) {
-      revealItems.forEach((item) => item.classList.add("is-visible"));
-    } else {
-      const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            revealObserver.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.18 });
-
-      revealItems.forEach((item) => revealObserver.observe(item));
-    }
-  </script>
 </body>
 </html>
