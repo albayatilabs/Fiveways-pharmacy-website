@@ -65,7 +65,7 @@
       <a href="#">Travel Health</a>
     </nav>
     <div class="quick-nav container" aria-label="Popular shortcuts">
-      <p>Quick picks:</p>
+      <p>Popular:</p>
       <a href="#" class="quick-pill quick-pill--featured">Hayfever</a>
       <a href="#">Children's medicines</a>
       <a href="#">Gut health</a>
@@ -74,69 +74,216 @@
     </div>
   </header>
 
+  <!-- Compact sticky header shown after the full header scrolls away -->
+  <div class="compact-header" aria-label="Compact sticky site tools">
+    <div class="compact-header-inner container">
+      <a class="compact-brand" href="#" aria-label="Fiveways Pharmacy home">
+        <img
+          class="compact-brand-logo"
+          src="./official_logo.png"
+          alt="Five Ways Pharmacy"
+          width="300"
+          height="132"
+        />
+      </a>
+      <form class="compact-search" role="search" aria-label="Compact site search">
+        <input
+          type="search"
+          placeholder="Search medicines, services and pharmacy essentials..."
+          aria-label="Search site"
+        />
+        <button type="submit">Search</button>
+      </form>
+      <a href="#" class="compact-menu" aria-label="Browse categories">Categories</a>
+      <a href="#" class="compact-cart" aria-label="Shopping cart with 2 items">
+        Cart
+        <span>2</span>
+      </a>
+    </div>
+  </div>
+  <div class="compact-header-sentinel" aria-hidden="true"></div>
+
   <main>
-    <!-- Hero: service-first pharmacy search and visual -->
+    <!-- Premium top showcase: integrated hero plus service-side stack -->
     <section class="hero container">
-      <div class="hero-copy">
-        <span class="kicker">Trusted local pharmacy services online</span>
-        <h1>Pharmacy support made simple, from services to everyday care</h1>
-        <p>
-          Book pharmacy services, manage prescriptions and find trusted health
-          products with clear guidance from Fiveways Pharmacy.
-        </p>
-        <div class="hero-tags" aria-label="Shopping highlights">
-          <span>Pharmacist support</span>
-          <span>NHS and private services</span>
-          <span>Fast UK dispatch</span>
+      <div class="hero-panel">
+        <div class="hero-copy">
+          <span class="kicker">Trusted UK online pharmacy</span>
+          <h1>Health essentials delivered with pharmacy-level confidence</h1>
+          <p>
+            Book pharmacy services, manage repeat prescriptions and shop trusted
+            everyday care with clear guidance from Fiveways Pharmacy.
+          </p>
+          <div class="hero-tags" aria-label="Trust highlights">
+            <span>Clinically trusted brands</span>
+            <span>Fast UK dispatch</span>
+            <span>Clear pricing</span>
+          </div>
+          <form class="hero-search" role="search" aria-label="Hero search">
+            <input
+              type="search"
+              placeholder="Find products quickly: pain relief, vitamins, skincare..."
+              aria-label="Search hero products"
+            />
+            <button type="submit">Find products</button>
+          </form>
+          <div class="hero-cta">
+            <a href="#" class="btn btn-primary">Book a pharmacy service</a>
+            <a href="#" class="btn btn-ghost">Browse all categories</a>
+          </div>
+          <div class="hero-stats" aria-label="Hero highlights">
+            <article>
+              <strong>Prescription support</strong>
+              <span>Simple requests and repeat medication help</span>
+            </article>
+            <article>
+              <strong>Pharmacist guidance</strong>
+              <span>Friendly advice from a qualified pharmacy team</span>
+            </article>
+            <article>
+              <strong>Discreet delivery</strong>
+              <span>Fast, secure and privacy-first fulfilment</span>
+            </article>
+          </div>
         </div>
-        <form class="hero-search" role="search" aria-label="Hero search">
-          <input
-            type="search"
-            placeholder="Search services, prescriptions, pain relief, vitamins..."
-            aria-label="Search hero products"
-          />
-          <button type="submit">Search</button>
-        </form>
-        <div class="hero-cta">
-          <a href="#" class="btn btn-primary">Book a pharmacy service</a>
-          <a href="#" class="cta-text">Shop health essentials</a>
-        </div>
-        <div class="hero-stats" aria-label="Service highlights">
-          <article>
-            <strong>7 Services</strong>
-            <span>Book online</span>
-          </article>
-          <article>
-            <strong>4.8/5</strong>
-            <span>Verified rating</span>
-          </article>
-          <article>
-            <strong>Next Day</strong>
-            <span>UK delivery option</span>
-          </article>
+        <div class="hero-visual" aria-label="Pharmacy products displayed with soft medical styling">
+          <div class="hero-image-shell">
+            <img
+              class="hero-scene"
+              src="./assets/images/hero-products.png"
+              alt="Pharmacy products displayed with soft medical styling"
+              width="1773"
+              height="887"
+            />
+          </div>
         </div>
       </div>
-      <div class="hero-visual" aria-label="Illustration of online pharmacy services">
-        <img
-          class="hero-scene"
-          src="./1.png"
-          alt="Pharmacy products displayed with soft medical styling"
-          width="1773"
-          height="887"
-        />
-        <div class="visual-card pharmacy-card">
-          <span>Fiveways</span>
-          <strong>Service bookings, prescriptions and trusted care</strong>
-        </div>
-        <div class="visual-badge badge-booking">
-          <strong>Book</strong>
-          <span>Travel health, blood pressure checks, consultations</span>
-        </div>
-        <div class="visual-badge badge-dispatch">
-          <strong>Fast dispatch</strong>
-          <span>Everyday essentials shipped quickly across the UK</span>
-        </div>
-        <a href="#" class="hero-service-cta">Book a pharmacy service</a>
+      <aside class="hero-side" aria-label="Service shortcuts">
+        <article class="side-card side-card-primary">
+          <div class="side-card-mark">RX</div>
+          <div class="side-card-copy">
+            <h3>Prescription services</h3>
+            <p>Manage repeats without the hassle and request support in a simple flow.</p>
+          </div>
+          <a href="#" class="side-card-cta">Start request</a>
+        </article>
+        <article class="side-card">
+          <div class="side-card-mark">24</div>
+          <div class="side-card-copy">
+            <h3>Fast dispatch</h3>
+            <p>Order before 2pm for same-day dispatch Monday to Friday.</p>
+          </div>
+        </article>
+        <article class="side-card">
+          <div class="side-card-mark">PH</div>
+          <div class="side-card-copy">
+            <h3>Qualified support</h3>
+            <p>Friendly pharmacy guidance for everyday questions and product choice.</p>
+          </div>
+        </article>
+        <article class="side-card">
+          <div class="side-card-mark">PRV</div>
+          <div class="side-card-copy">
+            <h3>Discreet packaging</h3>
+            <p>Every order is packed carefully to protect your privacy.</p>
+          </div>
+        </article>
+        <article class="side-card">
+          <div class="side-card-mark">CHK</div>
+          <div class="side-card-copy">
+            <h3>Trusted products</h3>
+            <p>Shop clinically trusted health essentials and genuine brands.</p>
+          </div>
+        </article>
+      </aside>
+    </section>
+
+    <!-- Compact category shortcuts close to the hero -->
+    <section class="section category-section container">
+      <div class="section-head">
+        <h2>Shop by category</h2>
+        <a href="#">View all categories</a>
+      </div>
+      <p class="section-intro">Jump straight to the categories people use most often.</p>
+      <div class="category-grid">
+        <a href="#" class="category-card">
+          <div class="category-media">
+            <img
+              class="category-photo category-photo-isolated category-photo-capsule"
+              src="./assets/images/capsule-pill.png"
+              alt="Capsule pill for the Pain Relief category"
+              width="440"
+              height="423"
+            />
+          </div>
+          <h3>Pain Relief</h3>
+          <p>Tablets, gels and everyday pain support.</p>
+        </a>
+        <a href="#" class="category-card">
+          <div class="category-media">
+            <img
+              class="category-photo category-photo-isolated category-photo-tissue-box"
+              src="./assets/images/tissue-box.png"
+              alt="Tissue box for the Cold and Flu category"
+              width="856"
+              height="1024"
+            />
+          </div>
+          <h3>Cold & Flu</h3>
+          <p>Seasonal care, congestion and recovery essentials.</p>
+        </a>
+        <a href="#" class="category-card">
+          <div class="category-media">
+            <img
+              class="category-photo category-photo-hero category-photo-vitamin"
+              src="./assets/images/hero-products.png"
+              alt="Vitamin packaging visual"
+              width="1773"
+              height="887"
+            />
+          </div>
+          <h3>Vitamins</h3>
+          <p>Daily wellbeing, immunity and energy support.</p>
+        </a>
+        <a href="#" class="category-card">
+          <div class="category-media">
+            <img
+              class="category-photo category-photo-isolated category-photo-cream-jar"
+              src="./assets/images/cream-jar.png"
+              alt="Cream jar for the Skincare category"
+              width="693"
+              height="709"
+            />
+          </div>
+          <h3>Skincare</h3>
+          <p>Gentle care, SPF and sensitive skin products.</p>
+        </a>
+        <a href="#" class="category-card">
+          <div class="category-media">
+            <img
+              class="category-photo category-photo-isolated category-photo-rubber-duck"
+              src="./assets/images/rubber-duck.png"
+              alt="Rubber duck for the Baby and Mum category"
+              width="561"
+              height="619"
+            />
+          </div>
+          <h3>Baby & Mum</h3>
+          <p>Family essentials for feeding, hygiene and care.</p>
+        </a>
+        <a href="#" class="category-card">
+          <div class="category-media">
+            <img
+              class="category-photo category-photo-isolated category-photo-suitcase"
+              src="./assets/images/suitcase.png"
+              alt="Suitcase for the Travel Health category"
+              width="562"
+              height="959"
+            />
+          </div>
+          <h3>Travel Health</h3>
+          <p>Travel care, sun protection and trip essentials.</p>
+        </a>
       </div>
     </section>
 
@@ -151,51 +298,51 @@
       </div>
       <p class="section-intro">Book the support you need quickly, with clear next steps and a pharmacy team ready to help.</p>
       <div class="service-grid">
-        <article class="service-card reveal-card">
-          <div class="service-icon icon-first" aria-hidden="true"></div>
+        <article class="service-card">
+          <div class="service-mark">NHS</div>
           <h3>NHS Pharmacy First</h3>
           <p>Get help for common conditions without waiting for a GP appointment.</p>
           <a href="#">Check eligibility</a>
         </article>
 
-        <article class="service-card service-card-featured reveal-card">
+        <article class="service-card service-card-featured">
           <div class="service-badge">FREE SERVICE</div>
-          <div class="service-icon icon-smoking" aria-hidden="true"></div>
+          <div class="service-mark service-mark-highlight">QUIT</div>
           <h3>Stop Smoking Clinic</h3>
           <p>Get friendly support to help you quit smoking, with advice and a personalised quit plan.</p>
           <a href="#">Get free support</a>
         </article>
 
-        <article class="service-card reveal-card">
-          <div class="service-icon icon-repeat" aria-hidden="true"></div>
+        <article class="service-card">
+          <div class="service-mark">RX</div>
           <h3>Repeat Prescriptions</h3>
           <p>Request regular medication support with simple account-based updates.</p>
           <a href="#">Manage repeats</a>
         </article>
 
-        <article class="service-card reveal-card">
-          <div class="service-icon icon-travel" aria-hidden="true"></div>
+        <article class="service-card">
+          <div class="service-mark">TRVL</div>
           <h3>Travel Health</h3>
           <p>Prepare for travel with practical pharmacy advice and health essentials.</p>
           <a href="#">Plan travel care</a>
         </article>
 
-        <article class="service-card reveal-card">
-          <div class="service-icon icon-pressure" aria-hidden="true"></div>
+        <article class="service-card">
+          <div class="service-mark">BP</div>
           <h3>Blood Pressure Checks</h3>
           <p>Quick checks and helpful guidance for monitoring heart health.</p>
           <a href="#">Book a check</a>
         </article>
 
-        <article class="service-card reveal-card">
-          <div class="service-icon icon-vaccine" aria-hidden="true"></div>
+        <article class="service-card">
+          <div class="service-mark">VAX</div>
           <h3>Vaccinations</h3>
           <p>Stay protected with convenient vaccination support from the pharmacy.</p>
           <a href="#">View vaccines</a>
         </article>
 
-        <article class="service-card reveal-card">
-          <div class="service-icon icon-consult" aria-hidden="true"></div>
+        <article class="service-card">
+          <div class="service-mark">CARE</div>
           <h3>Private Consultations</h3>
           <p>Speak with the pharmacy team about private healthcare options.</p>
           <a href="#">Start consultation</a>
@@ -205,11 +352,11 @@
 
     <!-- Compact pharmacy reassurance strip -->
     <section class="trust-strip container" aria-label="Pharmacy reassurance">
-      <div class="trust-pill reveal-card"><span aria-hidden="true"></span>Registered UK pharmacy</div>
-      <div class="trust-pill reveal-card"><span aria-hidden="true"></span>Secure checkout</div>
-      <div class="trust-pill reveal-card"><span aria-hidden="true"></span>Discreet packaging</div>
-      <div class="trust-pill reveal-card"><span aria-hidden="true"></span>Pharmacist support</div>
-      <div class="trust-pill reveal-card"><span aria-hidden="true"></span>Fast dispatch</div>
+      <div class="trust-pill"><span aria-hidden="true"></span>Registered UK pharmacy</div>
+      <div class="trust-pill"><span aria-hidden="true"></span>Secure checkout</div>
+      <div class="trust-pill"><span aria-hidden="true"></span>Discreet packaging</div>
+      <div class="trust-pill"><span aria-hidden="true"></span>Pharmacist support</div>
+      <div class="trust-pill"><span aria-hidden="true"></span>Fast dispatch</div>
     </section>
 
     <!-- Products remain secondary to services -->
@@ -222,17 +369,23 @@
       <div class="product-grid">
         <article class="product-card">
           <div class="product-labels">
-            <p class="badge">Best Seller</p>
+            <p class="badge">Popular</p>
             <p class="stock-tag">Pharmacy checked</p>
           </div>
           <div class="product-image">
-            <span class="product-visual product-vitamin">Vitamin C</span>
+            <img
+              class="product-photo product-photo-hero product-photo-vitamin"
+              src="./assets/images/hero-products.png"
+              alt="Vitamin D3 supplement packaging"
+              width="1773"
+              height="887"
+            />
           </div>
-          <h3>Immune Support Vitamin C 1000mg</h3>
+          <h3>Vitamin D3 1000iu Tablets</h3>
           <p class="product-size">60 tablets</p>
           <p class="rating">4.8/5 (216 reviews)</p>
-          <p class="dispatch">Get it by tomorrow</p>
-          <p class="product-note">Clinically balanced daily immune support formula.</p>
+          <p class="dispatch">Fast dispatch available</p>
+          <p class="product-note">Daily vitamin support for routine wellbeing.</p>
           <div class="product-meta">
             <p class="price">GBP 8.99 <span>GBP 10.99</span></p>
             <button>Add to cart</button>
@@ -241,100 +394,78 @@
 
         <article class="product-card">
           <div class="product-labels">
-            <p class="badge">Value</p>
-            <p class="stock-tag">In stock</p>
+            <p class="badge">Best seller</p>
+            <p class="stock-tag">Popular</p>
           </div>
           <div class="product-image">
-            <span class="product-visual product-tablets">Pain Relief</span>
+            <img
+              class="product-photo product-photo-hero product-photo-omega"
+              src="./assets/images/hero-products.png"
+              alt="Omega 3 bottle product packaging"
+              width="1773"
+              height="887"
+            />
           </div>
-          <h3>Ibuprofen 200mg Tablets (16)</h3>
-          <p class="product-size">1 pack</p>
-          <p class="rating">4.7/5 (402 reviews)</p>
-          <p class="dispatch">In stock</p>
-          <p class="product-note">Effective short-term pain and fever relief.</p>
-          <div class="product-meta">
-            <p class="price">GBP 2.49</p>
-            <button>Add to cart</button>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-labels">
-            <p class="badge">Dermatology Pick</p>
-            <p class="stock-tag">Expert pick</p>
-          </div>
-          <div class="product-image">
-            <span class="product-visual product-tube">Skincare</span>
-          </div>
-          <h3>Daily Moisture SPF30 Sensitive Skin</h3>
-          <p class="product-size">50ml</p>
-          <p class="rating">4.6/5 (188 reviews)</p>
+          <h3>Omega 3 High Strength Softgels</h3>
+          <p class="product-size">30 softgels</p>
+          <p class="rating">4.7/5 (194 reviews)</p>
           <p class="dispatch">Get it by tomorrow</p>
-          <p class="product-note">Lightweight hydration with broad spectrum SPF.</p>
+          <p class="product-note">Everyday support with pharmacy-checked quality.</p>
           <div class="product-meta">
-            <p class="price">GBP 11.50 <span>GBP 13.00</span></p>
+            <p class="price">GBP 12.50</p>
             <button>Add to cart</button>
           </div>
         </article>
 
         <article class="product-card">
           <div class="product-labels">
-            <p class="badge">Seasonal Care</p>
-            <p class="stock-tag">Family essential</p>
+            <p class="badge">Seasonal care</p>
+            <p class="stock-tag">Fast dispatch</p>
           </div>
           <div class="product-image">
-            <span class="product-visual product-sachet">Cold & Flu</span>
+            <img
+              class="product-photo product-photo-hero product-photo-hayfever"
+              src="./assets/images/hero-products.png"
+              alt="Hayfever relief product packaging"
+              width="1773"
+              height="887"
+            />
           </div>
-          <h3>All-in-One Cold & Flu Relief Sachets</h3>
-          <p class="product-size">10 sachets</p>
-          <p class="rating">4.5/5 (129 reviews)</p>
+          <h3>Hayfever Relief Tablets</h3>
+          <p class="product-size">30 tablets</p>
+          <p class="rating">4.6/5 (143 reviews)</p>
           <p class="dispatch">In stock</p>
-          <p class="product-note">Multi-symptom support for seasonal recovery.</p>
+          <p class="product-note">Convenient seasonal symptom support for everyday use.</p>
           <div class="product-meta">
-            <p class="price">GBP 5.95</p>
+            <p class="price">GBP 7.25</p>
             <button>Add to cart</button>
           </div>
         </article>
-      </div>
-    </section>
 
-    <section class="section container">
-      <div class="section-head">
-        <h2>Shop by category</h2>
-        <a href="#">Browse all</a>
-      </div>
-      <p class="section-intro">Jump straight to the categories people use most often.</p>
-      <div class="category-grid">
-        <a href="#" class="category-card">
-          <span class="category-icon category-pain" aria-hidden="true"></span>
-          <h3>Pain Relief</h3>
-          <p>Tablets, gels and everyday pain support.</p>
-        </a>
-        <a href="#" class="category-card">
-          <span class="category-icon category-cold" aria-hidden="true"></span>
-          <h3>Cold & Flu</h3>
-          <p>Seasonal care, congestion and recovery essentials.</p>
-        </a>
-        <a href="#" class="category-card">
-          <span class="category-icon category-vitamins" aria-hidden="true"></span>
-          <h3>Vitamins</h3>
-          <p>Daily wellbeing, immunity and energy support.</p>
-        </a>
-        <a href="#" class="category-card">
-          <span class="category-icon category-skincare" aria-hidden="true"></span>
-          <h3>Skincare</h3>
-          <p>Gentle care, SPF and sensitive skin products.</p>
-        </a>
-        <a href="#" class="category-card">
-          <span class="category-icon category-baby" aria-hidden="true"></span>
-          <h3>Baby & Mum</h3>
-          <p>Family essentials for feeding, hygiene and care.</p>
-        </a>
-        <a href="#" class="category-card">
-          <span class="category-icon category-travel" aria-hidden="true"></span>
-          <h3>Travel Health</h3>
-          <p>Travel care, sun protection and trip essentials.</p>
-        </a>
+        <article class="product-card">
+          <div class="product-labels">
+            <p class="badge">Daily care</p>
+            <p class="stock-tag">Trusted product</p>
+          </div>
+          <div class="product-image">
+            <img
+              class="product-photo product-photo-hero product-photo-jar"
+              src="./assets/images/hero-products.png"
+              alt="Daily care cream jar"
+              width="1773"
+              height="887"
+            />
+          </div>
+          <h3>Sensitive Skin Daily Care Balm</h3>
+          <p class="product-size">50ml</p>
+          <p class="rating">4.6/5 (121 reviews)</p>
+          <p class="dispatch">Fast dispatch available</p>
+          <p class="product-note">Gentle moisturising care for dry and sensitive skin.</p>
+          <div class="product-meta">
+            <p class="price">GBP 9.75 <span>GBP 11.00</span></p>
+            <button>Add to cart</button>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -422,24 +553,34 @@
     </div>
   </footer>
   <script>
-    // Reveal service and trust cards without affecting users who prefer reduced motion.
-    const revealItems = document.querySelectorAll(".reveal-card");
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    // Toggle a compact sticky header after the main header scrolls away.
+    (() => {
+      const sentinel = document.querySelector(".compact-header-sentinel");
+      if (!sentinel) return;
 
-    if (reduceMotion || !("IntersectionObserver" in window)) {
-      revealItems.forEach((item) => item.classList.add("is-visible"));
-    } else {
-      const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            revealObserver.unobserve(entry.target);
-          }
+      const toggleStickyHeader = (active) => {
+        document.body.classList.toggle("compact-header-active", active);
+      };
+
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver((entries) => {
+          const entry = entries[0];
+          toggleStickyHeader(!entry.isIntersecting && entry.boundingClientRect.top < 0);
+        }, {
+          threshold: 0,
+          rootMargin: "-8px 0px 0px 0px",
         });
-      }, { threshold: 0.18 });
 
-      revealItems.forEach((item) => revealObserver.observe(item));
-    }
+        observer.observe(sentinel);
+      } else {
+        const onScroll = () => {
+          toggleStickyHeader(window.scrollY > sentinel.offsetTop + 8);
+        };
+
+        onScroll();
+        window.addEventListener("scroll", onScroll, { passive: true });
+      }
+    })();
   </script>
 </body>
 </html>
