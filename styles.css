@@ -880,6 +880,11 @@ main {
   line-height: 1.22;
 }
 
+.hero-trust-subtitle--single-line {
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
 .free-text {
   color: #bf2335;
 }
