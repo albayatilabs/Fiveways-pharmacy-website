@@ -366,6 +366,15 @@ svg {
   position: relative;
 }
 
+.category-pill-dropdown::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: min(45rem, calc(100vw - 1rem));
+  height: 0.72rem;
+}
+
 .category-pill-dropdown-menu {
   position: absolute;
   top: calc(100% + 0.62rem);
