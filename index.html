@@ -94,15 +94,93 @@
 
       <div class="header-browse">
         <nav class="category-nav" aria-label="Main categories">
-          <a href="#">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M8 5.5h8v13H8z" />
-              <path d="M10 3.75h4" />
-              <path d="M10 9.5h4" />
-              <path d="M10 13h4" />
-            </svg>
-            <span>Prescriptions</span>
-          </a>
+          <div class="category-pill-dropdown">
+            <a href="#" aria-haspopup="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5.5h8v13H8z" />
+                <path d="M10 3.75h4" />
+                <path d="M10 9.5h4" />
+                <path d="M10 13h4" />
+              </svg>
+              <span>Pharmacy Services</span>
+            </a>
+
+            <div class="category-pill-dropdown-menu" aria-label="Pharmacy Services menu">
+              <div class="category-pill-dropdown-section">
+                <p>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 19.25c-4.1-2.4-6.75-4.85-6.75-8.2a3.8 3.8 0 0 1 3.95-3.8c1.25 0 2.2.5 2.8 1.35.6-.85 1.55-1.35 2.8-1.35a3.8 3.8 0 0 1 3.95 3.8c0 3.35-2.65 5.8-6.75 8.2Z" />
+                    <path d="M12 9.6v4.1" />
+                    <path d="M9.95 11.65h4.1" />
+                  </svg>
+                  <span>Free NHS services</span>
+                </p>
+                <a href="#" class="category-pill-dropdown-link">
+                  <span>NHS Pharmacy First</span>
+                  <span class="category-pill-free-badge">FREE</span>
+                </a>
+                <a href="#" class="category-pill-dropdown-link">
+                  <span>Stop Smoking Clinic</span>
+                  <span class="category-pill-free-badge">FREE</span>
+                </a>
+                <a href="#" class="category-pill-dropdown-link">
+                  <span>Blood Pressure Check</span>
+                  <span class="category-pill-free-badge">FREE</span>
+                </a>
+              </div>
+
+              <div class="category-pill-dropdown-section">
+                <p>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4.75 13.5h8.2l5.3-6.25c.45-.55 1.35-.55 1.8 0 .4.5.35 1.2-.1 1.65l-4.2 4.6h3.5c.8 0 1.45.65 1.45 1.45s-.65 1.45-1.45 1.45h-3.5l4.2 4.6c.45.45.5 1.15.1 1.65-.45.55-1.35.55-1.8 0l-5.3-6.25h-8.2" />
+                    <path d="M7.25 10.4l-2.5 2.1 2.5 2.1" />
+                  </svg>
+                  <span>Travel &amp; prevention</span>
+                </p>
+                <a href="#" class="category-pill-dropdown-link">Travel Vaccines</a>
+                <a href="#" class="category-pill-dropdown-link">Flu Vaccine</a>
+                <a href="#" class="category-pill-dropdown-link">Travel Health Advice</a>
+              </div>
+
+              <div class="category-pill-dropdown-section">
+                <p>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M8 5.5h8v13H8z" />
+                    <path d="M10 3.75h4" />
+                    <path d="M10 9.5h4" />
+                    <path d="M10 13h4" />
+                  </svg>
+                  <span>Prescriptions &amp; care</span>
+                </p>
+                <a href="#" class="category-pill-dropdown-link">Repeat Prescriptions</a>
+                <a href="#" class="category-pill-dropdown-link">Private Consultations</a>
+                <a href="#" class="category-pill-dropdown-link">Medicine Advice</a>
+              </div>
+
+              <div class="category-pill-dropdown-actions">
+                <a href="#" class="category-pill-dropdown-link">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="4.75" y="4.75" width="5.5" height="5.5" rx="1.1" />
+                    <rect x="13.75" y="4.75" width="5.5" height="5.5" rx="1.1" />
+                    <rect x="4.75" y="13.75" width="5.5" height="5.5" rx="1.1" />
+                    <rect x="13.75" y="13.75" width="5.5" height="5.5" rx="1.1" />
+                  </svg>
+                  <span>View all services</span>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 12h12" />
+                    <path d="M13 7l5 5-5 5" />
+                  </svg>
+                </a>
+                <a href="#" class="category-pill-dropdown-link">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 4.5 13.45 9l4.55 1.45-4.55 1.45L12 16.5l-1.45-4.6L6 10.45 10.55 9 12 4.5Z" />
+                    <path d="M18.5 4.75 19 6.25l1.5.5-1.5.5-.5 1.5-.5-1.5-1.5-.5 1.5-.5.5-1.5Z" />
+                  </svg>
+                  <span>FiveWays AI Assistant</span>
+                </a>
+              </div>
+            </div>
+          </div>
           <a href="#">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M7 9.25c0-1.8 1.45-3.25 3.25-3.25h3.5c1.8 0 3.25 1.45 3.25 3.25s-1.45 3.25-3.25 3.25h-3.5C8.45 12.5 7 13.95 7 15.75S8.45 19 10.25 19h3.5c1.8 0 3.25-1.45 3.25-3.25" />
@@ -148,6 +226,15 @@
               <path d="M12 12v3.5" />
             </svg>
             <span>Travel Health</span>
+          </a>
+          <a href="#">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 5.5h8v13H8z" />
+              <path d="M10 3.75h4" />
+              <path d="M10 9.5h4" />
+              <path d="M10 13h4" />
+            </svg>
+            <span>Prescriptions</span>
           </a>
         </nav>
 
@@ -814,6 +901,7 @@
         window.addEventListener("scroll", onScroll, { passive: true });
       }
     })();
+
   </script>
 </body>
 </html>
