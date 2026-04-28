@@ -886,6 +886,14 @@ main {
   white-space: nowrap;
 }
 
+.hero-trust-subtitle-lock {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  gap: 0.22rem;
+  white-space: nowrap;
+}
+
 .free-text {
   color: #bf2335;
 }
