@@ -880,7 +880,8 @@ main {
   line-height: 1.22;
 }
 
-.hero-trust-subtitle--single-line {
+.hero-trust-copy small.hero-trust-subtitle--single-line {
+  display: inline-flex;
   flex-wrap: nowrap;
   white-space: nowrap;
 }
