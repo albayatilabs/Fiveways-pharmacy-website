@@ -1091,6 +1091,18 @@ main {
   height: 19px;
 }
 
+.side-card-icon img {
+  display: block;
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+.side-card-primary .side-card-icon img {
+  width: 42px;
+  height: 42px;
+}
+
 .side-card-copy {
   min-width: 0;
 }
