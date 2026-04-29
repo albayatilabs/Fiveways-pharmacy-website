@@ -855,6 +855,14 @@ main {
   height: 17px;
 }
 
+.hero-trust-card img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .hero-trust-copy {
   display: flex;
   flex-direction: column;
