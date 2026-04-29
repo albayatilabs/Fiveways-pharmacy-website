@@ -1053,20 +1053,24 @@ main {
 .side-card-primary::before {
   content: "";
   position: absolute;
-  top: -14%;
-  right: -8%;
-  width: 78%;
-  height: 150%;
+  top: -24%;
+  right: 4%;
+  width: 56%;
+  height: 176%;
   background: linear-gradient(
     220deg,
-    rgba(255, 255, 255, 0) 18%,
-    rgba(255, 255, 255, 0.08) 48%,
-    rgba(255, 255, 255, 0.16) 52%,
-    rgba(255, 255, 255, 0.04) 60%,
-    rgba(255, 255, 255, 0) 72%
+    rgba(255, 255, 255, 0) 41%,
+    rgba(255, 255, 255, 0.02) 46%,
+    rgba(255, 255, 255, 0.11) 48.5%,
+    rgba(255, 255, 255, 0.24) 50%,
+    rgba(255, 255, 255, 0.11) 51.5%,
+    rgba(255, 255, 255, 0.02) 54%,
+    rgba(255, 255, 255, 0) 59%
   );
-  transform: rotate(16deg);
+  transform: rotate(18deg);
   transform-origin: top right;
+  filter: blur(1.8px);
+  opacity: 0.92;
   pointer-events: none;
   z-index: 0;
 }
@@ -1076,9 +1080,9 @@ main {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 18% 16%, rgba(255, 255, 255, 0.15), transparent 20%),
-    radial-gradient(circle at 84% 24%, rgba(255, 255, 255, 0.08), transparent 22%),
-    radial-gradient(circle at 76% 78%, rgba(255, 255, 255, 0.06), transparent 24%);
+    radial-gradient(circle at 18% 16%, rgba(255, 255, 255, 0.12), transparent 18%),
+    radial-gradient(circle at 84% 24%, rgba(255, 255, 255, 0.05), transparent 20%),
+    radial-gradient(circle at 76% 78%, rgba(255, 255, 255, 0.04), transparent 22%);
   pointer-events: none;
   z-index: 0;
 }
