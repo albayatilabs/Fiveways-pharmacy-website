@@ -1044,47 +1044,24 @@ main {
   overflow: hidden;
   isolation: isolate;
   padding: 1.06rem 1.08rem;
-  background: linear-gradient(160deg, var(--deep-teal), var(--deep-teal-strong));
+  background-color: var(--deep-teal);
+  background-image:
+    linear-gradient(180deg, rgba(7, 53, 59, 0.08), rgba(7, 53, 59, 0.18)),
+    url("./assets/images/right-support-card-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-color: transparent;
   color: #ffffff;
   box-shadow: 0 20px 34px rgba(var(--textdark-rgb), 0.18);
 }
 
 .side-card-primary::before {
-  content: "";
-  position: absolute;
-  top: -24%;
-  right: 4%;
-  width: 56%;
-  height: 176%;
-  background: linear-gradient(
-    220deg,
-    rgba(255, 255, 255, 0) 41%,
-    rgba(255, 255, 255, 0.02) 46%,
-    rgba(255, 255, 255, 0.11) 48.5%,
-    rgba(255, 255, 255, 0.24) 50%,
-    rgba(255, 255, 255, 0.11) 51.5%,
-    rgba(255, 255, 255, 0.02) 54%,
-    rgba(255, 255, 255, 0) 59%
-  );
-  transform: rotate(18deg);
-  transform-origin: top right;
-  filter: blur(1.8px);
-  opacity: 0.92;
-  pointer-events: none;
-  z-index: 0;
+  content: none;
 }
 
 .side-card-primary::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at 18% 16%, rgba(255, 255, 255, 0.12), transparent 18%),
-    radial-gradient(circle at 84% 24%, rgba(255, 255, 255, 0.05), transparent 20%),
-    radial-gradient(circle at 76% 78%, rgba(255, 255, 255, 0.04), transparent 22%);
-  pointer-events: none;
-  z-index: 0;
+  content: none;
 }
 
 .side-card-primary > * {
