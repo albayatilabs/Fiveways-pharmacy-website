@@ -39,6 +39,21 @@
 
     <div class="header-shell container">
       <div class="header-main">
+        <button
+          class="mobile-menu-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu-drawer"
+          aria-haspopup="dialog"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4.5 7.25h15" />
+            <path d="M4.5 12h15" />
+            <path d="M4.5 16.75h15" />
+          </svg>
+        </button>
+
         <a class="brand" href="#" aria-label="Fiveways Pharmacy home">
           <img
             class="brand-logo"
@@ -236,6 +251,13 @@
             </svg>
             <span>Prescriptions</span>
           </a>
+          <a href="#" class="category-pill-popular">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 4.75 13.35 9l4.25 1.35-4.25 1.35L12 15.95 10.65 11.7 6.4 10.35 10.65 9 12 4.75Z" />
+              <path d="M18.4 5.35 18.8 6.6l1.25.4-1.25.4-.4 1.25-.4-1.25-1.25-.4 1.25-.4.4-1.25Z" />
+            </svg>
+            <span>Popular now</span>
+          </a>
         </nav>
 
         <div class="quick-nav" aria-label="Popular shortcuts">
@@ -249,6 +271,85 @@
       </div>
     </div>
   </header>
+
+  <div class="mobile-menu-shell" aria-hidden="true">
+    <button class="mobile-menu-overlay" type="button" aria-label="Close menu"></button>
+    <aside
+      class="mobile-menu-drawer"
+      id="mobile-menu-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-labelledby="mobile-menu-title"
+    >
+      <div class="mobile-menu-drawer-inner">
+        <div class="mobile-menu-header">
+          <div class="mobile-menu-header-copy">
+            <img
+              class="mobile-menu-logo"
+              src="./assets/brand/fiveways-logo-new.svg"
+              alt="Fiveways Pharmacy"
+              width="454"
+              height="227"
+            />
+          </div>
+          <button class="mobile-menu-close" type="button" aria-label="Close menu">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6.5 6.5 17.5 17.5" />
+              <path d="M17.5 6.5 6.5 17.5" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="mobile-menu-body">
+          <section class="mobile-menu-section" aria-labelledby="mobile-menu-shop">
+            <h2 class="mobile-menu-section-title" id="mobile-menu-shop">Shop</h2>
+            <div class="mobile-menu-links">
+              <a href="#" class="mobile-menu-link">All products</a>
+              <a href="#" class="mobile-menu-link">Pharmacy services</a>
+              <a href="#" class="mobile-menu-link">Pain relief</a>
+              <a href="#" class="mobile-menu-link">Cold &amp; Flu</a>
+              <a href="#" class="mobile-menu-link">Vitamins</a>
+              <a href="#" class="mobile-menu-link">Skincare</a>
+              <a href="#" class="mobile-menu-link">Baby &amp; Child</a>
+              <a href="#" class="mobile-menu-link">Popular now</a>
+            </div>
+          </section>
+
+          <section class="mobile-menu-section" aria-labelledby="mobile-menu-account">
+            <h2 class="mobile-menu-section-title" id="mobile-menu-account">Account</h2>
+            <div class="mobile-menu-links">
+              <a href="#" class="mobile-menu-link">Login</a>
+              <a href="#" class="mobile-menu-link">Sign up</a>
+              <a href="#" class="mobile-menu-link">Account help</a>
+            </div>
+          </section>
+
+          <section class="mobile-menu-section" aria-labelledby="mobile-menu-support">
+            <h2 class="mobile-menu-section-title" id="mobile-menu-support">Support</h2>
+            <div class="mobile-menu-links">
+              <a href="#" class="mobile-menu-link">Delivery info</a>
+              <a href="#" class="mobile-menu-link">Returns</a>
+              <a href="#" class="mobile-menu-link">FAQs</a>
+              <a href="#" class="mobile-menu-link">Complaints</a>
+            </div>
+          </section>
+
+          <aside class="mobile-menu-help-card" aria-label="Need help">
+            <p class="mobile-menu-help-kicker">Need help?</p>
+            <h3>Call or message our pharmacy team.</h3>
+            <a href="#" class="mobile-menu-help-link">
+              <span>Contact us</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </aside>
+          <button class="mobile-menu-close-button" type="button" aria-label="Close menu">
+            Close menu
+          </button>
+        </div>
+      </div>
+    </aside>
+  </div>
 
   <div class="compact-header" aria-label="Compact sticky site tools">
     <div class="compact-header-inner container">
@@ -314,6 +415,16 @@
               trusted health products from FiveWays Pharmacy.
             </p>
 
+            <a href="#" class="hero-mobile-visual" aria-label="Explore pharmacy services">
+              <img
+                class="hero-mobile-scene"
+                src="./assets/hero/hero-mobile-card-final.png"
+                alt=""
+                width="1086"
+                height="1448"
+              />
+            </a>
+
             <div class="hero-trust" aria-label="Trust highlights">
               <article class="hero-trust-card">
                 <img src="./assets/images/hero-icon-pharmacy-first.png" alt="" decoding="async" />
@@ -361,9 +472,13 @@
             </form>
 
             <div class="hero-cta">
-              <a href="#" class="btn btn-primary">Explore pharmacy services</a>
+              <a href="#" class="btn btn-primary">
+                <span class="hero-cta-label hero-cta-label--desktop">Explore pharmacy services</span>
+                <span class="hero-cta-label hero-cta-label--mobile">Pharmacy services</span>
+              </a>
               <a href="#" class="hero-link">
-                <span>Shop essentials</span>
+                <span class="hero-link-label hero-link-label--desktop">Shop essentials</span>
+                <span class="hero-link-label hero-link-label--mobile">Shop health essentials</span>
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M6 12h12" />
                   <path d="M13 7l5 5-5 5" />
@@ -383,6 +498,41 @@
               />
             </div>
           </div>
+        </section>
+
+        <section class="mobile-service-cards" aria-label="Mobile service shortcuts">
+          <a href="#" class="mobile-service-card" aria-label="Pharmacy First - Free NHS support">
+            <img
+              class="mobile-service-card__image"
+              src="./assets/images/mobile-service-cards/pharmacy-first-card.png"
+              alt=""
+              width="1086"
+              height="1448"
+              decoding="async"
+            />
+          </a>
+
+          <a href="#" class="mobile-service-card" aria-label="Stop Smoking Clinic - Free support to quit">
+            <img
+              class="mobile-service-card__image"
+              src="./assets/images/mobile-service-cards/stop-smoking-clinic-card.png"
+              alt=""
+              width="1086"
+              height="1448"
+              decoding="async"
+            />
+          </a>
+
+          <a href="#" class="mobile-service-card" aria-label="Online Consultation - Speak to our team">
+            <img
+              class="mobile-service-card__image"
+              src="./assets/images/mobile-service-cards/online-consultation-card.png"
+              alt=""
+              width="1086"
+              height="1448"
+              decoding="async"
+            />
+          </a>
         </section>
 
         <section class="category-section category-section--compact">
@@ -1132,6 +1282,84 @@
 
         onScroll();
         window.addEventListener("scroll", onScroll, { passive: true });
+      }
+    })();
+
+    // Open and close the mobile drawer menu from the hamburger button.
+    (() => {
+      const menuToggle = document.querySelector(".mobile-menu-toggle");
+      const menuShell = document.querySelector(".mobile-menu-shell");
+      const menuDrawer = document.querySelector(".mobile-menu-drawer");
+      const menuOverlay = document.querySelector(".mobile-menu-overlay");
+      const menuClose = document.querySelector(".mobile-menu-close");
+      const menuCloseButton = document.querySelector(".mobile-menu-close-button");
+
+      if (!menuToggle || !menuShell || !menuDrawer || !menuOverlay || !menuClose) return;
+
+      const mobileViewport = window.matchMedia("(max-width: 768px)");
+      let lastFocusedElement = null;
+
+      const closeMenu = ({ restoreFocus = true } = {}) => {
+        document.body.classList.remove("mobile-menu-open");
+        menuShell.setAttribute("aria-hidden", "true");
+        menuDrawer.setAttribute("aria-hidden", "true");
+        menuToggle.setAttribute("aria-expanded", "false");
+
+        if (restoreFocus && lastFocusedElement instanceof HTMLElement) {
+          lastFocusedElement.focus();
+        }
+
+        lastFocusedElement = null;
+      };
+
+      const openMenu = () => {
+        if (!mobileViewport.matches) return;
+
+        lastFocusedElement = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+
+        document.body.classList.add("mobile-menu-open");
+        menuShell.setAttribute("aria-hidden", "false");
+        menuDrawer.setAttribute("aria-hidden", "false");
+        menuToggle.setAttribute("aria-expanded", "true");
+
+        requestAnimationFrame(() => {
+          menuClose.focus();
+        });
+      };
+
+      const toggleMenu = () => {
+        if (document.body.classList.contains("mobile-menu-open")) {
+          closeMenu();
+          return;
+        }
+
+        openMenu();
+      };
+
+      menuToggle.addEventListener("click", toggleMenu);
+      menuClose.addEventListener("click", () => closeMenu());
+      menuCloseButton?.addEventListener("click", () => closeMenu());
+      menuOverlay.addEventListener("click", () => closeMenu({ restoreFocus: false }));
+
+      menuShell.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => closeMenu({ restoreFocus: false }));
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && document.body.classList.contains("mobile-menu-open")) {
+          closeMenu();
+        }
+      });
+
+      const syncMenuToViewport = () => {
+        if (mobileViewport.matches) return;
+        closeMenu({ restoreFocus: false });
+      };
+
+      if (typeof mobileViewport.addEventListener === "function") {
+        mobileViewport.addEventListener("change", syncMenuToViewport);
+      } else if (typeof mobileViewport.addListener === "function") {
+        mobileViewport.addListener(syncMenuToViewport);
       }
     })();
 
