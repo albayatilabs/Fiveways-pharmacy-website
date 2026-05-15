@@ -402,102 +402,75 @@
   <main>
     <section class="home-showcase hero container">
       <div class="home-main-stack">
-        <section class="hero-panel">
-          <div class="hero-copy">
-            <span class="kicker">Trusted UK online pharmacy</span>
-            <h1>
-              <span class="hero-heading-line">Pharmacy services</span>
-              <span class="hero-heading-line">and health essentials,</span>
-              <span class="hero-heading-line">delivered with confidence</span>
-            </h1>
-            <p>
-              Access Pharmacy First, stop smoking support, online consultations and
-              trusted health products from FiveWays Pharmacy.
-            </p>
-
-            <a href="#" class="hero-mobile-visual" aria-label="Explore pharmacy services">
+        <section class="hero-panel hero-carousel" role="region" aria-roledescription="carousel" aria-label="Featured pharmacy services">
+          <div class="hero-carousel__slides">
+            <div class="hero-carousel__slide is-active" data-slide-title="Pharmacy First Services" aria-hidden="false">
               <img
-                class="hero-mobile-scene"
-                src="./assets/hero/hero-mobile-card-final.png"
-                alt=""
-                width="1086"
-                height="1448"
+                src="./assets/images/carousel/hero-pharmacy-first.png"
+                alt="Pharmacy First Services consultation banner"
+                width="1672"
+                height="941"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
               />
-            </a>
-
-            <div class="hero-trust" aria-label="Trust highlights">
-              <article class="hero-trust-card">
-                <img src="./assets/images/hero-icon-pharmacy-first.png" alt="" decoding="async" />
-                <span class="hero-trust-copy">
-                  <strong>Pharmacy First</strong>
-                  <small class="hero-trust-subtitle hero-trust-subtitle--single-line">
-                    <span class="free-text">Free</span>
-                    <span>NHS support</span>
-                  </small>
-                </span>
-              </article>
-              <article class="hero-trust-card">
-                <img src="./assets/images/hero-icon-stop-smoking.png" alt="" decoding="async" />
-                <span class="hero-trust-copy">
-                  <strong>Stop Smoking Clinic</strong>
-                  <small class="hero-trust-subtitle">
-                    <span class="hero-trust-subtitle-lock">
-                      <span class="free-text">Free</span>
-                      <span>support</span>
-                    </span>
-                    <span>to quit</span>
-                  </small>
-                </span>
-              </article>
-              <article class="hero-trust-card">
-                <img src="./assets/images/hero-icon-online-consultation.png" alt="" decoding="async" />
-                <span class="hero-trust-copy">
-                  <strong>Online Consultation</strong>
-                  <small>
-                    <span>Speak to our team</span>
-                  </small>
-                </span>
-              </article>
             </div>
 
-            <form class="hero-search" role="search" aria-label="Hero search">
-              <label class="sr-only" for="hero-search-input">Search featured products</label>
-              <input
-                id="hero-search-input"
-                type="search"
-                placeholder="Find products quickly: pain relief, vitamins, skincare..."
-                aria-label="Search hero products"
+            <div class="hero-carousel__slide" data-slide-title="Stop Smoking Clinic" aria-hidden="true">
+              <img
+                src="./assets/images/carousel/hero-stop-smoking.png"
+                alt="Stop Smoking Clinic support banner"
+                width="1672"
+                height="941"
+                loading="lazy"
+                decoding="async"
               />
-              <button type="submit">Find products</button>
-            </form>
+            </div>
 
-            <div class="hero-cta">
-              <a href="#" class="btn btn-primary">
-                <span class="hero-cta-label hero-cta-label--desktop">Explore pharmacy services</span>
-                <span class="hero-cta-label hero-cta-label--mobile">Pharmacy services</span>
-              </a>
-              <a href="#" class="hero-link">
-                <span class="hero-link-label hero-link-label--desktop">Shop essentials</span>
-                <span class="hero-link-label hero-link-label--mobile">Shop health essentials</span>
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M6 12h12" />
-                  <path d="M13 7l5 5-5 5" />
-                </svg>
-              </a>
+            <div class="hero-carousel__slide" data-slide-title="Umbrella Services" aria-hidden="true">
+              <img
+                src="./assets/images/carousel/hero-umbrella-services.png"
+                alt="Umbrella Services discreet sexual health support banner"
+                width="1672"
+                height="941"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="hero-carousel__slide" data-slide-title="Weight Loss Support" aria-hidden="true">
+              <img
+                src="./assets/images/carousel/hero-weight-loss-support.png"
+                alt="Weight Loss Support consultation banner"
+                width="1672"
+                height="941"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
           </div>
 
-          <div class="hero-visual" aria-label="Featured pharmacy products">
-            <div class="hero-image-shell">
-              <img
-                class="hero-scene"
-                src="./assets/images/hero-products.png"
-                alt="Pharmacy products displayed with soft medical styling"
-                width="1773"
-                height="887"
-              />
-            </div>
+          <div class="hero-carousel__controls" aria-label="Carousel navigation">
+            <button type="button" class="hero-carousel__arrow hero-carousel__arrow--prev" aria-label="Previous service">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M15 6l-6 6 6 6" />
+              </svg>
+            </button>
+            <button type="button" class="hero-carousel__arrow hero-carousel__arrow--next" aria-label="Next service">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 6l6 6-6 6" />
+              </svg>
+            </button>
           </div>
+
+          <div class="hero-carousel__dots" aria-label="Select a featured service slide">
+            <button type="button" class="hero-carousel__dot is-active" aria-label="Show Pharmacy First Services slide" aria-current="true"></button>
+            <button type="button" class="hero-carousel__dot" aria-label="Show Stop Smoking Clinic slide" aria-current="false"></button>
+            <button type="button" class="hero-carousel__dot" aria-label="Show Umbrella Services slide" aria-current="false"></button>
+            <button type="button" class="hero-carousel__dot" aria-label="Show Weight Loss Support slide" aria-current="false"></button>
+          </div>
+
+          <p class="sr-only hero-carousel__status" aria-live="polite">Showing Pharmacy First Services slide</p>
         </section>
 
         <section class="mobile-service-cards" aria-label="Mobile service shortcuts">
@@ -1361,6 +1334,199 @@
       } else if (typeof mobileViewport.addListener === "function") {
         mobileViewport.addListener(syncMenuToViewport);
       }
+    })();
+
+    // Fade between homepage hero service banners with calm autoplay and manual controls.
+    (() => {
+      const carousel = document.querySelector(".hero-carousel");
+      if (!carousel) return;
+
+      const slides = Array.from(carousel.querySelectorAll(".hero-carousel__slide"));
+      const dots = Array.from(carousel.querySelectorAll(".hero-carousel__dot"));
+      const prevButton = carousel.querySelector(".hero-carousel__arrow--prev");
+      const nextButton = carousel.querySelector(".hero-carousel__arrow--next");
+      const status = carousel.querySelector(".hero-carousel__status");
+      const touchViewport = window.matchMedia("(hover: none) and (pointer: coarse)");
+
+      if (!slides.length || !dots.length || !prevButton || !nextButton) return;
+
+      const autoplayDelay = 5000;
+      const swipeThreshold = 48;
+      let activeIndex = Math.max(0, slides.findIndex((slide) => slide.classList.contains("is-active")));
+      let autoplayId = null;
+      let isHoverPaused = false;
+      let isFocusPaused = false;
+      let lastInteractionWasKeyboard = false;
+      let touchStartX = null;
+      let touchStartY = null;
+
+      const markKeyboardInteraction = () => {
+        lastInteractionWasKeyboard = true;
+      };
+
+      const markPointerInteraction = () => {
+        lastInteractionWasKeyboard = false;
+      };
+
+      const updateSlides = (nextIndex) => {
+        activeIndex = (nextIndex + slides.length) % slides.length;
+
+        slides.forEach((slide, index) => {
+          const isActive = index === activeIndex;
+          slide.classList.toggle("is-active", isActive);
+          slide.setAttribute("aria-hidden", isActive ? "false" : "true");
+        });
+
+        dots.forEach((dot, index) => {
+          const isActive = index === activeIndex;
+          dot.classList.toggle("is-active", isActive);
+          dot.setAttribute("aria-current", isActive ? "true" : "false");
+        });
+
+        if (status) {
+          status.textContent = `Showing ${slides[activeIndex].dataset.slideTitle} slide`;
+        }
+      };
+
+      const clearAutoplay = () => {
+        if (!autoplayId) return;
+        window.clearTimeout(autoplayId);
+        autoplayId = null;
+      };
+
+      const isPaused = () => isHoverPaused || isFocusPaused;
+
+      const queueAutoplay = () => {
+        clearAutoplay();
+        if (isPaused() || slides.length < 2) return;
+
+        autoplayId = window.setTimeout(() => {
+          updateSlides(activeIndex + 1);
+          queueAutoplay();
+        }, autoplayDelay);
+      };
+
+      const pauseForHover = () => {
+        isHoverPaused = true;
+        clearAutoplay();
+      };
+
+      const resumeFromHover = () => {
+        isHoverPaused = false;
+        queueAutoplay();
+      };
+
+      const pauseForFocus = () => {
+        isFocusPaused = true;
+        clearAutoplay();
+      };
+
+      const resumeFromFocus = () => {
+        isFocusPaused = false;
+        queueAutoplay();
+      };
+
+      const syncKeyboardFocusState = () => {
+        const activeElement = document.activeElement;
+        const hasKeyboardFocus =
+          lastInteractionWasKeyboard &&
+          activeElement instanceof HTMLElement &&
+          carousel.contains(activeElement) &&
+          activeElement.matches(":focus-visible");
+
+        carousel.classList.toggle("hero-carousel--keyboard-focus", hasKeyboardFocus);
+
+        if (hasKeyboardFocus) {
+          pauseForFocus();
+          return;
+        }
+
+        resumeFromFocus();
+      };
+
+      const cleanupPointerFocus = (control) => {
+        window.requestAnimationFrame(() => {
+          if (!lastInteractionWasKeyboard) {
+            control.blur();
+          }
+
+          syncKeyboardFocusState();
+        });
+      };
+
+      const goToSlide = (nextIndex) => {
+        updateSlides(nextIndex);
+        queueAutoplay();
+      };
+
+      prevButton.addEventListener("click", () => {
+        goToSlide(activeIndex - 1);
+        cleanupPointerFocus(prevButton);
+      });
+
+      nextButton.addEventListener("click", () => {
+        goToSlide(activeIndex + 1);
+        cleanupPointerFocus(nextButton);
+      });
+
+      dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+          goToSlide(index);
+          cleanupPointerFocus(dot);
+        });
+      });
+
+      carousel.addEventListener("mouseenter", pauseForHover);
+      carousel.addEventListener("mouseleave", resumeFromHover);
+      carousel.addEventListener("pointerdown", markPointerInteraction);
+      carousel.addEventListener("touchstart", markPointerInteraction, { passive: true });
+      carousel.addEventListener("touchstart", (event) => {
+        if (!touchViewport.matches || event.touches.length !== 1) return;
+
+        const touch = event.touches[0];
+        touchStartX = touch.clientX;
+        touchStartY = touch.clientY;
+        clearAutoplay();
+      }, { passive: true });
+      carousel.addEventListener("touchend", (event) => {
+        if (!touchViewport.matches || touchStartX === null || touchStartY === null || !event.changedTouches.length) {
+          touchStartX = null;
+          touchStartY = null;
+          return;
+        }
+
+        const touch = event.changedTouches[0];
+        const deltaX = touch.clientX - touchStartX;
+        const deltaY = touch.clientY - touchStartY;
+        const absX = Math.abs(deltaX);
+        const absY = Math.abs(deltaY);
+
+        touchStartX = null;
+        touchStartY = null;
+
+        if (absX >= swipeThreshold && absX > absY) {
+          goToSlide(deltaX < 0 ? activeIndex + 1 : activeIndex - 1);
+          return;
+        }
+
+        queueAutoplay();
+      }, { passive: true });
+      carousel.addEventListener("touchcancel", () => {
+        touchStartX = null;
+        touchStartY = null;
+        queueAutoplay();
+      }, { passive: true });
+      carousel.addEventListener("focusin", () => {
+        window.requestAnimationFrame(syncKeyboardFocusState);
+      });
+      carousel.addEventListener("focusout", () => {
+        window.requestAnimationFrame(syncKeyboardFocusState);
+      });
+
+      document.addEventListener("keydown", markKeyboardInteraction, true);
+
+      updateSlides(activeIndex);
+      queueAutoplay();
     })();
 
   </script>
