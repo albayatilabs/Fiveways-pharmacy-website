@@ -48,6 +48,19 @@ try {
       $safePath = $path -replace '/', '\'
       $fullPath = Join-Path $root $safePath
 
+      if ((Test-Path $fullPath) -and (Get-Item $fullPath).PSIsContainer) {
+        $fullPath = Join-Path $fullPath "index.html"
+      } elseif (-not (Test-Path $fullPath) -and [string]::IsNullOrWhiteSpace([System.IO.Path]::GetExtension($safePath))) {
+        $folderIndexPath = Join-Path $fullPath "index.html"
+        $htmlPath = "$fullPath.html"
+
+        if (Test-Path $folderIndexPath) {
+          $fullPath = $folderIndexPath
+        } elseif (Test-Path $htmlPath) {
+          $fullPath = $htmlPath
+        }
+      }
+
       if ((Test-Path $fullPath) -and -not (Get-Item $fullPath).PSIsContainer) {
         $bytes = [System.IO.File]::ReadAllBytes($fullPath)
         $header = "HTTP/1.1 200 OK`r`nContent-Type: $(Get-ContentType $fullPath)`r`nContent-Length: $($bytes.Length)`r`nConnection: close`r`n`r`n"
