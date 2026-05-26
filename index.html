@@ -219,7 +219,7 @@
               <a href="repeat-prescriptions.html" class="category-pill-dropdown-link">Repeat prescriptions</a>
             </div>
           </div>
-          <a href="health-advice.html">
+          <a href="health-advice/">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M6.5 7.25h11a2.25 2.25 0 0 1 2.25 2.25v5a2.25 2.25 0 0 1-2.25 2.25H11l-4 2v-2H6.5A2.25 2.25 0 0 1 4.25 14.5v-5A2.25 2.25 0 0 1 6.5 7.25Z" />
               <path d="M8.5 10.75h7" />
@@ -227,7 +227,7 @@
             </svg>
             <span>Health Advice</span>
           </a>
-          <a href="#shop-by-category">
+          <a href="#shop-by-category" class="service-led-hidden" hidden>
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M3.5 5h2l1.7 9.25h9.9L19 8H6.2" />
               <circle cx="9.25" cy="18.25" r="1.35" />
@@ -313,8 +313,8 @@
               <a href="weight-loss-support/" class="mobile-menu-link">Weight Loss</a>
               <a href="nhs-contraception-services/" class="mobile-menu-link">NHS Contraception Services</a>
               <a href="prescriptions.html" class="mobile-menu-link">Prescriptions</a>
-              <a href="health-advice.html" class="mobile-menu-link">Health Advice</a>
-              <a href="#shop-by-category" class="mobile-menu-link">Over-the-counter Purchases</a>
+              <a href="health-advice/" class="mobile-menu-link">Health Advice</a>
+              <a href="#shop-by-category" class="mobile-menu-link service-led-hidden" hidden>Over-the-counter Purchases</a>
               <a href="covid-vaccines-spring-autumn.html" class="mobile-menu-link">COVID Vaccines (Spring / Autumn)</a>
               <a href="flu-vaccines-autumn.html" class="mobile-menu-link">Flu Vaccines (Autumn)</a>
             </div>
@@ -403,7 +403,7 @@
   <div class="compact-header-sentinel" aria-hidden="true"></div>
 
   <main>
-    <section class="home-showcase hero container">
+    <section class="home-showcase hero home-showcase--service-led container">
       <div class="home-main-stack">
         <a href="service-payment.html" class="mobile-service-payment-banner" aria-label="Service Payment - pay securely for pharmacy services">
           <span class="mobile-service-payment-banner__icon" aria-hidden="true">
@@ -529,7 +529,7 @@
           </a>
         </section>
 
-        <section class="category-section category-section--compact" id="shop-by-category">
+        <section class="category-section category-section--compact service-led-hidden" id="shop-by-category" hidden>
           <div class="section-head section-head--compact">
             <h2>Shop by category</h2>
             <a href="#">
@@ -778,7 +778,7 @@
           </div>
         </article>
 
-        <article class="side-card side-card--trusted-products">
+        <article class="side-card side-card--trusted-products service-led-hidden" hidden>
           <div class="side-card-icon" aria-hidden="true">
             <img src="./assets/images/right-icon-trusted-products.png" alt="" decoding="async" />
           </div>
@@ -887,7 +887,7 @@
           />
         </a>
 
-        <a href="health-advice.html" class="service-mobile-card">
+        <a href="health-advice/" class="service-mobile-card">
           <img
             class="service-mobile-card__image"
             src="./assets/images/pharmacy-services-mobile/07-health-advice.png"
@@ -897,7 +897,7 @@
           />
         </a>
 
-        <a href="#shop-by-category" class="service-mobile-card">
+        <a href="#shop-by-category" class="service-mobile-card service-led-hidden" hidden>
           <img
             class="service-mobile-card__image"
             src="./assets/images/pharmacy-services-mobile/08-over-the-counter-purchases.png"
@@ -1124,7 +1124,7 @@
           </div>
           <div class="footer-nav-shell">
             <div class="footer-nav">
-              <details class="footer-nav-column footer-nav-column--shop footer-nav-accordion" open>
+              <details class="footer-nav-column footer-nav-column--shop footer-nav-accordion service-led-hidden" open hidden>
                 <summary class="footer-nav-toggle">
                   <span>Shop</span>
                   <svg viewBox="0 0 24 24" aria-hidden="true">

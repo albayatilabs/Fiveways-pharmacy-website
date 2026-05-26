@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pharmacy First Services | Five Ways Pharmacy</title>
+  <title>Health Advice | Five Ways Pharmacy</title>
   <meta
     name="description"
-    content="Get pharmacist-led Pharmacy First support from Five Ways Pharmacy for common conditions, with advice, self-care guidance and treatment where suitable."
+    content="Find trusted NHS health information and general pharmacy support from Five Ways Pharmacy for medicines, minor illness guidance, and everyday healthcare questions."
   />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,6 +15,23 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="../styles.css" />
+  <style>
+    @media (max-width: 720px) {
+      .service-detail-page--health-advice .service-detail-section--mobile-offset .service-detail-alert,
+      .service-detail-page--health-advice .service-detail-section--mobile-offset .service-detail-section-head,
+      .service-detail-page--health-advice .service-detail-section--mobile-offset .service-detail-faq-list {
+        margin-inline-start: 0.42rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .service-detail-page--health-advice .service-detail-section--mobile-offset .service-detail-alert,
+      .service-detail-page--health-advice .service-detail-section--mobile-offset .service-detail-section-head,
+      .service-detail-page--health-advice .service-detail-section--mobile-offset .service-detail-faq-list {
+        margin-inline-start: 0.34rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -265,10 +282,10 @@
         <div class="quick-nav" aria-label="Popular shortcuts">
           <p>Popular now:</p>
           <a href="../pharmacy-first/" class="quick-pill quick-pill--featured">Pharmacy First</a>
-          <a href="../nhs-contraception-services.html" class="quick-pill">NHS Contraception Services</a>
-          <a href="../stop-smoking.html" class="quick-pill">Smoking Cessation Services</a>
-          <a href="../umbrella-services.html" class="quick-pill">Umbrella Services</a>
-          <a href="../weight-loss.html" class="quick-pill">Weight Loss</a>
+          <a href="../nhs-contraception-services/" class="quick-pill">NHS Contraception Services</a>
+          <a href="../stop-smoking-clinic/" class="quick-pill">Smoking Cessation Services</a>
+          <a href="../umbrella-services/" class="quick-pill">Umbrella Services</a>
+          <a href="../weight-loss-support/" class="quick-pill">Weight Loss</a>
         </div>
       </div>
     </div>
@@ -308,10 +325,10 @@
             <h2 class="mobile-menu-section-title" id="mobile-menu-services">Services</h2>
             <div class="mobile-menu-links">
               <a href="../pharmacy-first/" class="mobile-menu-link">Pharmacy First</a>
-              <a href="../stop-smoking.html" class="mobile-menu-link">Smoking Cessation Services</a>
-              <a href="../umbrella-services.html" class="mobile-menu-link">Umbrella Services</a>
-              <a href="../weight-loss.html" class="mobile-menu-link">Weight Loss</a>
-              <a href="../nhs-contraception-services.html" class="mobile-menu-link">NHS Contraception Services</a>
+              <a href="../stop-smoking-clinic/" class="mobile-menu-link">Smoking Cessation Services</a>
+              <a href="../umbrella-services/" class="mobile-menu-link">Umbrella Services</a>
+              <a href="../weight-loss-support/" class="mobile-menu-link">Weight Loss</a>
+              <a href="../nhs-contraception-services/" class="mobile-menu-link">NHS Contraception Services</a>
               <a href="../prescriptions.html" class="mobile-menu-link">Prescriptions</a>
               <a href="../health-advice/" class="mobile-menu-link">Health Advice</a>
               <a href="../index.html#shop-by-category" class="mobile-menu-link service-led-hidden" hidden>Over-the-counter Purchases</a>
@@ -402,380 +419,153 @@
   </div>
   <div class="compact-header-sentinel" aria-hidden="true"></div>
 
-  <main class="service-detail-page service-detail-page--pharmacy-first">
+  <main class="service-detail-page service-detail-page--health-advice">
     <section class="service-detail-hero container">
       <div class="service-detail-hero-shell">
         <div class="service-detail-hero-copy">
           <nav class="service-detail-breadcrumb" aria-label="Breadcrumb">
             <a href="../index.html">Home</a>
             <span aria-hidden="true">/</span>
-            <span aria-current="page">Pharmacy First Services</span>
+            <span aria-current="page">Health Advice</span>
           </nav>
-          <span class="section-kicker">NHS service</span>
-          <h1>Pharmacy First Services</h1>
+          <span class="section-kicker">Trusted support</span>
+          <h1>Health Advice</h1>
           <p>
-            Get help from a pharmacist for common conditions without needing to see a GP first, where appropriate.
-            We&rsquo;ll assess your symptoms, talk through the best next step and advise on self-care, over-the-counter
-            options or NHS treatment where clinically suitable.
+            Trusted NHS health information and pharmacy support, all in one place. Find trusted NHS health information,
+            medicines guidance and support for everyday healthcare questions, or speak to the Five Ways Pharmacy team for
+            help with medicines and general next-step support.
           </p>
-          <div class="service-detail-pill-row" aria-label="Service highlights">
-            <span>NHS service</span>
-            <span>Pharmacist-led support</span>
-            <span>Private consultation space</span>
-            <span>Advice and treatment where suitable</span>
+          <div class="service-detail-pill-row" aria-label="Health Advice highlights">
+            <span>NHS guidance</span>
+            <span>Medicines advice</span>
+            <span>Pharmacy support</span>
+            <span>Urgent help signposting</span>
           </div>
-          <div class="service-detail-hero-process" aria-labelledby="pharmacy-first-how-it-works">
-            <div class="service-detail-hero-process__intro">
-              <h2 id="pharmacy-first-how-it-works">How it works</h2>
-              <p>We&rsquo;ll guide you through a simple pharmacist-led assessment before advising on the safest next step.</p>
-            </div>
-            <div class="service-detail-hero-steps">
-              <article class="service-detail-step-card service-detail-step-card--hero">
-                <span class="service-detail-step-number">1</span>
-                <h3>Tell us about your symptoms</h3>
-                <p>Share what you are experiencing and how long it has been going on.</p>
-              </article>
-              <article class="service-detail-step-card service-detail-step-card--hero">
-                <span class="service-detail-step-number">2</span>
-                <h3>Speak with the pharmacist</h3>
-                <p>We&rsquo;ll talk through your symptoms, medicines, and relevant medical history.</p>
-              </article>
-              <article class="service-detail-step-card service-detail-step-card--hero">
-                <span class="service-detail-step-number">3</span>
-                <h3>Get advice and treatment where suitable</h3>
-                <p>You may receive self-care guidance, over-the-counter options, or NHS treatment where appropriate.</p>
-              </article>
-              <article class="service-detail-step-card service-detail-step-card--hero">
-                <span class="service-detail-step-number">4</span>
-                <h3>Follow next steps or referral guidance if needed</h3>
-                <p>If Pharmacy First is not suitable, we&rsquo;ll explain the safest next route for you.</p>
-              </article>
-            </div>
-            <div class="service-detail-action-row service-detail-action-row--hero-process">
-              <a href="#footer-help-card" class="service-detail-button service-detail-button--primary">Book a Pharmacy First request</a>
-            </div>
+          <div class="service-detail-action-row">
+            <a href="https://www.nhs.uk/health-a-to-z/" class="service-detail-button service-detail-button--primary">Search NHS Health A to Z</a>
+            <a href="#footer-help-card" class="service-detail-button service-detail-button--secondary">Speak to our pharmacy team</a>
           </div>
+          <p class="service-detail-action-note">NHS guidance links on this page take you to trusted external NHS resources.</p>
         </div>
 
-        <aside class="service-detail-hero-card" aria-label="Pharmacy First overview">
-          <div class="service-detail-hero-card__media">
-            <img
-              src="../assets/images/pharmacy-services-made-simple/service-nhs-pharmacy-first.png"
-              alt="Pharmacy First Services support illustration"
-              loading="eager"
-              decoding="async"
-            />
-          </div>
+        <aside class="service-detail-hero-card" aria-label="Health Advice overview">
           <div class="service-detail-hero-card__body">
             <p class="service-detail-hero-card__eyebrow">At a glance</p>
             <ul class="service-detail-checklist">
-              <li>Common NHS clinical pathways for common conditions</li>
-              <li>Walk in or contact the pharmacy directly for an assessment</li>
-              <li>Advice, referral or treatment may be provided where appropriate</li>
+              <li>Trusted NHS resources for conditions, symptoms, medicines, tests, and treatments</li>
+              <li>General support from Five Ways Pharmacy for medicines and everyday healthcare questions</li>
+              <li>Useful signposting when you may need NHS 111, a GP, urgent care, or emergency help</li>
             </ul>
-            <div class="service-detail-hero-card__badge">
-              <img
-                src="../assets/images/pharmacy-first/nhs-providing-services.png"
-                alt="NHS Providing Services"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
           </div>
         </aside>
       </div>
     </section>
 
     <section class="service-detail-section container">
-      <div class="service-detail-section-head service-detail-section-head--conditions">
-        <span class="section-kicker">Common conditions</span>
-        <h2>What can Pharmacy First help with?</h2>
-        <p>
-          Support for common conditions, subject to pharmacist assessment and the relevant NHS clinical pathway.
-        </p>
-      </div>
-      <div class="service-detail-conditions-grid">
-        <a class="service-detail-condition-card" href="#sinusitis">
-          <span class="service-detail-condition-media">
-            <img
-              src="../assets/images/pharmacy-first-conditions/sinusitis.webp"
-              alt="Sinusitis support illustration"
-              loading="lazy"
-              decoding="async"
-            />
-          </span>
-          <span class="service-detail-condition-pill">12 years and over</span>
-          <h3>Sinusitis</h3>
-          <p>Tap to view what the pharmacist may ask and the next-step guidance.</p>
-        </a>
-        <a class="service-detail-condition-card" href="#sore-throat">
-          <span class="service-detail-condition-media">
-            <img
-              src="../assets/images/pharmacy-first-conditions/sore-throat.webp"
-              alt="Sore throat support illustration"
-              loading="lazy"
-              decoding="async"
-            />
-          </span>
-          <span class="service-detail-condition-pill">5 years and over</span>
-          <h3>Sore throat</h3>
-          <p>Tap to view assessment guidance, support options, and referral notes.</p>
-        </a>
-        <a class="service-detail-condition-card" href="#infected-insect-bites">
-          <span class="service-detail-condition-media">
-            <img
-              src="../assets/images/pharmacy-first-conditions/infected-insect-bites.webp"
-              alt="Infected insect bites support illustration"
-              loading="lazy"
-              decoding="async"
-            />
-          </span>
-          <span class="service-detail-condition-pill">1 year and over</span>
-          <h3>Infected insect bites</h3>
-          <p>Tap to view what support may include when the clinical pathway is suitable.</p>
-        </a>
-        <a class="service-detail-condition-card" href="#impetigo">
-          <span class="service-detail-condition-media">
-            <img
-              src="../assets/images/pharmacy-first-conditions/impetigo.webp"
-              alt="Impetigo support illustration"
-              loading="lazy"
-              decoding="async"
-            />
-          </span>
-          <span class="service-detail-condition-pill">1 year and over</span>
-          <h3>Impetigo</h3>
-          <p>Tap to view how the pharmacist may assess symptoms and advise on next steps.</p>
-        </a>
-        <a class="service-detail-condition-card" href="#shingles">
-          <span class="service-detail-condition-media service-detail-condition-media--shingles">
-            <img
-              src="../assets/images/pharmacy-first-conditions/shingles.png"
-              alt="Shingles support illustration"
-              loading="lazy"
-              decoding="async"
-            />
-          </span>
-          <span class="service-detail-condition-pill">18 years and over</span>
-          <h3>Shingles</h3>
-          <p>Tap to view what the pharmacist may ask and when urgent follow-up may be needed.</p>
-        </a>
-        <a class="service-detail-condition-card" href="#uti-women">
-          <span class="service-detail-condition-media">
-            <img
-              src="../assets/images/pharmacy-first-conditions/uti-women.webp"
-              alt="Uncomplicated urinary tract infections in women support illustration"
-              loading="lazy"
-              decoding="async"
-            />
-          </span>
-          <span class="service-detail-condition-pill">Women aged 16 to 64</span>
-          <h3>Uncomplicated urinary tract infections in women</h3>
-          <p>Tap to view eligibility guidance, likely questions, and referral notes.</p>
-        </a>
-      </div>
-    </section>
-
-    <section class="service-detail-section container">
-      <div class="service-detail-info-grid">
-        <article class="service-detail-info-card">
-          <span class="section-kicker">Suitability</span>
-          <h2>Who it is for</h2>
+      <div class="service-detail-panel">
+        <div class="service-detail-section-head service-detail-section-head--compact">
+          <span class="section-kicker">Trusted NHS guidance</span>
+          <h2>Start with trusted NHS information</h2>
           <p>
-            Pharmacy First may be suitable for patients with symptoms linked to the listed common conditions.
-            The pharmacist will check your age, symptoms, current medicines and relevant health information before
-            confirming whether the service fits the NHS pathway.
+            Use these NHS resources for general health information, then speak to Five Ways Pharmacy if you need help with
+            medicines, self-care questions, or choosing the right next step.
           </p>
-          <p>
-            If Pharmacy First is not suitable, we may signpost you to another NHS service, your GP, NHS 111 or urgent
-            care, depending on your symptoms.
-          </p>
-        </article>
+        </div>
+        <div class="service-detail-guidance-grid">
+          <a class="service-detail-condition-card" href="https://www.nhs.uk/health-a-to-z/" aria-label="Open NHS Health A to Z on the NHS website">
+            <span class="section-kicker">External NHS link</span>
+            <h3>NHS Health A to Z</h3>
+            <p>Conditions, symptoms, medicines, tests and treatments.</p>
+            <span class="service-detail-condition-pill">NHS website</span>
+          </a>
 
-        <article class="service-detail-info-card">
-          <span class="section-kicker">Be prepared</span>
-          <h2>What to bring or what we may ask</h2>
-          <ul class="service-detail-bullet-list">
-            <li>Symptoms and how long they have been present</li>
-            <li>Current medicines, including anything bought over the counter</li>
-            <li>Any allergies or previous reactions to medicines</li>
-            <li>Relevant medical history or recent treatment</li>
-            <li>Prescription exemption evidence if applicable</li>
-          </ul>
-        </article>
+          <a class="service-detail-condition-card" href="https://www.nhs.uk/conditions/" aria-label="Open NHS Conditions A to Z on the NHS website">
+            <span class="section-kicker">External NHS link</span>
+            <h3>NHS Conditions A to Z</h3>
+            <p>Find health conditions, symptoms and treatment information.</p>
+            <span class="service-detail-condition-pill">NHS website</span>
+          </a>
+
+          <a class="service-detail-condition-card" href="https://www.nhs.uk/medicines/" aria-label="Open NHS Medicines A to Z on the NHS website">
+            <span class="section-kicker">External NHS link</span>
+            <h3>NHS Medicines A to Z</h3>
+            <p>Learn about medicines, how to take them and possible side effects.</p>
+            <span class="service-detail-condition-pill">NHS website</span>
+          </a>
+
+          <a class="service-detail-condition-card" href="https://111.nhs.uk/" aria-label="Open NHS 111 on the NHS website">
+            <span class="section-kicker">External NHS link</span>
+            <h3>NHS 111</h3>
+            <p>Get urgent medical help online when it is not a 999 emergency.</p>
+            <span class="service-detail-condition-pill">NHS website</span>
+          </a>
+        </div>
       </div>
     </section>
 
     <section class="service-detail-section container">
       <div class="service-detail-panel">
         <div class="service-detail-section-head service-detail-section-head--compact">
-          <span class="section-kicker">Condition guidance</span>
-          <h2>Condition guidance</h2>
-          <p>Pharmacy First support for common conditions, subject to pharmacist assessment and the NHS clinical pathway.</p>
+          <span class="section-kicker">Pharmacy support</span>
+          <h2>How Five Ways Pharmacy can help</h2>
+          <p>
+            The pharmacy team can help with general medicines advice, everyday minor illness questions, and safe
+            signposting when another NHS service may be more appropriate.
+          </p>
         </div>
         <div class="service-detail-guidance-grid">
-          <article class="service-detail-guidance-card" id="sinusitis">
-            <span class="service-detail-condition-pill">12 years and over</span>
-            <h3>Sinusitis</h3>
+          <article class="service-detail-guidance-card">
+            <h3>Medicines and side effects</h3>
             <div class="service-detail-guidance-item">
-              <h4>What the pharmacist may ask</h4>
-              <p>How long symptoms have been present, any facial pain or fever, and what support you have already tried.</p>
+              <h4>How we help</h4>
+              <p>We can offer general advice on taking medicines, common side effects, and when further advice may be needed.</p>
             </div>
             <div class="service-detail-guidance-item">
-              <h4>What support may include</h4>
-              <p>Self-care advice, suitable over-the-counter options, or NHS treatment where the pathway fits and it is clinically appropriate.</p>
-            </div>
-            <div class="service-detail-guidance-item">
-              <h4>Referral or safety note</h4>
-              <p>If symptoms are severe, worsening, or outside the pathway, we may refer you to your GP, NHS 111, or another NHS service.</p>
+              <h4>Important note</h4>
+              <p>Severe reactions, breathing problems, or sudden worsening symptoms need urgent medical help.</p>
             </div>
           </article>
 
-          <article class="service-detail-guidance-card" id="sore-throat">
-            <span class="service-detail-condition-pill">5 years and over</span>
-            <h3>Sore throat</h3>
+          <article class="service-detail-guidance-card">
+            <h3>Minor illness and Pharmacy First guidance</h3>
             <div class="service-detail-guidance-item">
-              <h4>What the pharmacist may ask</h4>
-              <p>When symptoms started, whether swallowing is difficult, and any fever, rash, or other new symptoms.</p>
+              <h4>How we help</h4>
+              <p>We can explain when pharmacist advice may be suitable and when Pharmacy First, your GP, or another NHS service may be the better route.</p>
             </div>
             <div class="service-detail-guidance-item">
-              <h4>What support may include</h4>
-              <p>Advice on fluids and symptom relief, suitable over-the-counter options, or NHS treatment if the pathway criteria are met.</p>
-            </div>
-            <div class="service-detail-guidance-item">
-              <h4>Referral or safety note</h4>
-              <p>We may signpost if symptoms suggest another cause, are severe, or need a different NHS service.</p>
+              <h4>Important note</h4>
+              <p>Support depends on your symptoms, age, medicines, and pharmacist assessment.</p>
             </div>
           </article>
 
-          <article class="service-detail-guidance-card" id="infected-insect-bites">
-            <span class="service-detail-condition-pill">1 year and over</span>
-            <h3>Infected insect bites</h3>
+          <article class="service-detail-guidance-card">
+            <h3>Everyday self-care advice</h3>
             <div class="service-detail-guidance-item">
-              <h4>What the pharmacist may ask</h4>
-              <p>When the bite happened, whether redness or swelling is spreading, and if there is pain, heat, or discharge.</p>
+              <h4>How we help</h4>
+              <p>We can support with general self-care guidance for everyday health concerns, including practical measures and over-the-counter options where suitable.</p>
             </div>
             <div class="service-detail-guidance-item">
-              <h4>What support may include</h4>
-              <p>Advice on skin care, symptom relief, and NHS treatment where the bite matches the Pharmacy First pathway.</p>
-            </div>
-            <div class="service-detail-guidance-item">
-              <h4>Referral or safety note</h4>
-              <p>Urgent swelling, severe pain, or symptoms outside the pathway may need GP, urgent care, or NHS 111 support.</p>
+              <h4>Important note</h4>
+              <p>Self-care advice does not replace assessment for symptoms that are persistent, severe, or unusual for you.</p>
             </div>
           </article>
 
-          <article class="service-detail-guidance-card" id="impetigo">
-            <span class="service-detail-condition-pill">1 year and over</span>
-            <h3>Impetigo</h3>
+          <article class="service-detail-guidance-card">
+            <h3>When to speak to a pharmacist</h3>
             <div class="service-detail-guidance-item">
-              <h4>What the pharmacist may ask</h4>
-              <p>Where the rash is, how it has changed, whether there is crusting or soreness, and if treatment has already been tried.</p>
+              <h4>How we help</h4>
+              <p>Speak to us if you need help understanding medicines guidance, choosing the next NHS service, or deciding whether a pharmacy consultation may help.</p>
             </div>
             <div class="service-detail-guidance-item">
-              <h4>What support may include</h4>
-              <p>Hygiene advice, guidance to help avoid spreading infection, and NHS treatment if the assessment supports the pathway.</p>
-            </div>
-            <div class="service-detail-guidance-item">
-              <h4>Referral or safety note</h4>
-              <p>Widespread symptoms, severe infection concerns, or uncertainty about the diagnosis may need a different NHS route.</p>
-            </div>
-          </article>
-
-          <article class="service-detail-guidance-card" id="shingles">
-            <span class="service-detail-condition-pill">18 years and over</span>
-            <h3>Shingles</h3>
-            <div class="service-detail-guidance-item">
-              <h4>What the pharmacist may ask</h4>
-              <p>When the rash or pain began, where it is located, and whether you have eye symptoms or feel generally unwell.</p>
-            </div>
-            <div class="service-detail-guidance-item">
-              <h4>What support may include</h4>
-              <p>Advice on symptom relief and NHS treatment where the timing, symptoms, and pathway criteria are suitable.</p>
-            </div>
-            <div class="service-detail-guidance-item">
-              <h4>Referral or safety note</h4>
-              <p>Eye involvement, severe pain, or signs of complications need urgent assessment through the appropriate NHS service.</p>
-            </div>
-          </article>
-
-          <article class="service-detail-guidance-card" id="uti-women">
-            <span class="service-detail-condition-pill">Women aged 16 to 64</span>
-            <h3>Uncomplicated urinary tract infections in women</h3>
-            <div class="service-detail-guidance-item">
-              <h4>What the pharmacist may ask</h4>
-              <p>What urinary symptoms you have, how long they have been present, and whether you have had similar symptoms before.</p>
-            </div>
-            <div class="service-detail-guidance-item">
-              <h4>What support may include</h4>
-              <p>Advice on fluids and symptom care, suitable over-the-counter options, or NHS treatment where the pathway and assessment allow.</p>
-            </div>
-            <div class="service-detail-guidance-item">
-              <h4>Referral or safety note</h4>
-              <p>Fever, flank pain, pregnancy, recurrent symptoms, or signs of a more serious infection may need another NHS route.</p>
+              <h4>Important note</h4>
+              <p>If symptoms are urgent, severe, or rapidly worsening, use NHS 111, contact your GP, attend urgent care, or call 999 as appropriate.</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="service-detail-section container" id="pharmacy-first-start">
-      <div class="service-detail-cta-panel">
-        <div class="service-detail-cta-copy">
-          <span class="section-kicker">Need support?</span>
-          <h2>Need help with a common condition?</h2>
-          <p>Speak to the Five Ways Pharmacy team and we&rsquo;ll guide you through the next step.</p>
-        </div>
-        <div class="service-detail-action-row service-detail-action-row--cta">
-          <a href="#footer-help-card" class="service-detail-button service-detail-button--primary">Book a Pharmacy First request</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="service-detail-section container">
-      <div class="service-detail-section-head">
-        <span class="section-kicker">Questions</span>
-        <h2>Pharmacy First FAQs</h2>
-      </div>
-      <div class="service-detail-faq-list">
-        <details class="service-detail-faq-item">
-          <summary>Do I need a GP appointment?</summary>
-          <p>
-            Not usually for the Pharmacy First consultation itself. You can speak to the pharmacy directly and the
-            pharmacist will assess whether the service is suitable for your symptoms.
-          </p>
-        </details>
-        <details class="service-detail-faq-item">
-          <summary>Is the consultation private?</summary>
-          <p>
-            If you would like more privacy, please ask to speak in the consultation room or a private area where
-            available.
-          </p>
-        </details>
-        <details class="service-detail-faq-item">
-          <summary>Will I always get medicine?</summary>
-          <p>
-            No. The pharmacist may give self-care advice, recommend an over-the-counter option, or supply NHS treatment
-            only if it is clinically appropriate under the service pathway.
-          </p>
-        </details>
-        <details class="service-detail-faq-item">
-          <summary>What happens if Pharmacy First is not suitable?</summary>
-          <p>
-            We&rsquo;ll explain the safest next step, which may include your GP, another NHS service, NHS 111 or urgent care.
-          </p>
-        </details>
-        <details class="service-detail-faq-item">
-          <summary>Is this an NHS service?</summary>
-          <p>
-            Yes. Pharmacy First is an NHS service in England for eligible patients when symptoms fit one of the clinical
-            pathways and the pharmacist confirms the service is appropriate.
-          </p>
-        </details>
-      </div>
-    </section>
-
-    <section class="service-detail-section container">
+    <section class="service-detail-section service-detail-section--mobile-offset container">
       <div class="service-detail-alert">
         <span class="service-detail-alert__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24">
@@ -785,11 +575,56 @@
           </svg>
         </span>
         <div class="service-detail-alert__copy">
-          <h2>Important guidance</h2>
+          <h2>When to seek urgent help</h2>
           <p>
             If symptoms are severe, worsening, or urgent, use NHS 111, contact your GP, or call 999 in an emergency.
+            Five Ways Pharmacy can help with general support and signposting, but it does not replace urgent or emergency care.
           </p>
         </div>
+      </div>
+    </section>
+
+    <section class="service-detail-section service-detail-section--mobile-offset container">
+      <div class="service-detail-section-head">
+        <span class="section-kicker">Questions</span>
+        <h2>Health Advice FAQs</h2>
+      </div>
+      <div class="service-detail-faq-list">
+        <details class="service-detail-faq-item">
+          <summary>Can the pharmacy give health advice?</summary>
+          <p>
+            Yes. Five Ways Pharmacy can help with general medicines advice, everyday healthcare questions, minor illness
+            support, and signposting to the right NHS service when needed.
+          </p>
+        </details>
+        <details class="service-detail-faq-item">
+          <summary>Should I use NHS Health A to Z?</summary>
+          <p>
+            Yes. NHS Health A to Z is a trusted starting point for general information on conditions, symptoms, medicines,
+            tests, and treatments. It is an external NHS resource.
+          </p>
+        </details>
+        <details class="service-detail-faq-item">
+          <summary>Can the pharmacist help with medicines?</summary>
+          <p>
+            Yes. The pharmacy team can help with general questions about medicines, common side effects, and when to seek
+            more help. If symptoms are serious or urgent, another NHS service may be more appropriate.
+          </p>
+        </details>
+        <details class="service-detail-faq-item">
+          <summary>What should I do if symptoms are urgent?</summary>
+          <p>
+            If symptoms are urgent or worsening, use NHS 111, contact your GP, or attend urgent care. Call 999 if it is an
+            emergency.
+          </p>
+        </details>
+        <details class="service-detail-faq-item">
+          <summary>Can I use this page instead of seeing a GP?</summary>
+          <p>
+            No. This page offers trusted general information and pharmacy signposting, but it does not diagnose conditions
+            or replace GP, NHS 111, urgent care, or emergency services.
+          </p>
+        </details>
       </div>
     </section>
   </main>
@@ -1065,57 +900,6 @@
     })();
 
     (() => {
-      const categorySection = document.getElementById("shop-by-category");
-      const serviceSection = document.querySelector(".service-section");
-      const heroShowcase = document.querySelector(".home-showcase.hero");
-      const heroSide = document.querySelector(".home-showcase.hero > .hero-side");
-      const homeMainStack = document.querySelector(".home-showcase.hero > .home-main-stack");
-      const mobileViewport = window.matchMedia("(max-width: 560px)");
-
-      if (!categorySection || !serviceSection || !heroShowcase || !heroSide || !homeMainStack) return;
-
-      const categoryOriginalAnchor = document.createComment("shop-by-category-original");
-      const serviceOriginalAnchor = document.createComment("service-section-original");
-      const serviceMobileAnchor = document.createComment("service-section-mobile");
-      const categoryMobileAnchor = document.createComment("shop-by-category-mobile");
-
-      homeMainStack.insertBefore(categoryOriginalAnchor, categorySection);
-      serviceSection.parentNode.insertBefore(serviceOriginalAnchor, serviceSection);
-      heroShowcase.insertBefore(serviceMobileAnchor, heroSide);
-      heroShowcase.insertBefore(categoryMobileAnchor, heroSide.nextSibling);
-
-      const reorderMobileSections = () => {
-        if (mobileViewport.matches) {
-          if (serviceMobileAnchor.parentNode && serviceSection.nextSibling !== serviceMobileAnchor) {
-            serviceMobileAnchor.parentNode.insertBefore(serviceSection, serviceMobileAnchor);
-          }
-
-          if (categoryMobileAnchor.parentNode && categorySection.nextSibling !== categoryMobileAnchor) {
-            categoryMobileAnchor.parentNode.insertBefore(categorySection, categoryMobileAnchor);
-          }
-
-          return;
-        }
-
-        if (serviceOriginalAnchor.parentNode && serviceSection.previousSibling !== serviceOriginalAnchor) {
-          serviceOriginalAnchor.parentNode.insertBefore(serviceSection, serviceOriginalAnchor.nextSibling);
-        }
-
-        if (categoryOriginalAnchor.parentNode && categorySection.previousSibling !== categoryOriginalAnchor) {
-          categoryOriginalAnchor.parentNode.insertBefore(categorySection, categoryOriginalAnchor.nextSibling);
-        }
-      };
-
-      reorderMobileSections();
-
-      if (typeof mobileViewport.addEventListener === "function") {
-        mobileViewport.addEventListener("change", reorderMobileSections);
-      } else if (typeof mobileViewport.addListener === "function") {
-        mobileViewport.addListener(reorderMobileSections);
-      }
-    })();
-
-    (() => {
       const footerAccordions = Array.from(document.querySelectorAll(".footer-nav-accordion"));
       const footerAccordionViewport = window.matchMedia("(max-width: 980px)");
       let accordionMode = null;
@@ -1222,199 +1006,6 @@
       } else if (typeof mobileViewport.addListener === "function") {
         mobileViewport.addListener(syncMenuToViewport);
       }
-    })();
-
-    (() => {
-      const carousel = document.querySelector(".hero-carousel");
-      if (!carousel) return;
-
-      const slides = Array.from(carousel.querySelectorAll(".hero-carousel__slide"));
-      const dots = Array.from(carousel.querySelectorAll(".hero-carousel__dot"));
-      const prevButton = carousel.querySelector(".hero-carousel__arrow--prev");
-      const nextButton = carousel.querySelector(".hero-carousel__arrow--next");
-      const status = carousel.querySelector(".hero-carousel__status");
-      const mobileCarouselViewport = window.matchMedia("(max-width: 768px)");
-
-      if (!slides.length || !dots.length || !prevButton || !nextButton) return;
-
-      const autoplayDelay = 5000;
-      const swipeThreshold = 48;
-      let activeIndex = Math.max(0, slides.findIndex((slide) => slide.classList.contains("is-active")));
-      let autoplayId = null;
-      let isHoverPaused = false;
-      let isFocusPaused = false;
-      let lastInteractionWasKeyboard = false;
-      let touchStartX = null;
-      let touchStartY = null;
-
-      const markKeyboardInteraction = () => {
-        lastInteractionWasKeyboard = true;
-      };
-
-      const markPointerInteraction = () => {
-        lastInteractionWasKeyboard = false;
-      };
-
-      const hasKeyboardFocus = () => document.activeElement && carousel.contains(document.activeElement) && lastInteractionWasKeyboard;
-      const isPaused = () => isHoverPaused || isFocusPaused;
-
-      const stopAutoplay = () => {
-        if (autoplayId === null) return;
-        window.clearInterval(autoplayId);
-        autoplayId = null;
-      };
-
-      const renderSlide = (nextIndex) => {
-        activeIndex = (nextIndex + slides.length) % slides.length;
-
-        slides.forEach((slide, index) => {
-          const isActive = index === activeIndex;
-          slide.classList.toggle("is-active", isActive);
-          slide.setAttribute("aria-hidden", isActive ? "false" : "true");
-        });
-
-        dots.forEach((dot, index) => {
-          const isActive = index === activeIndex;
-          dot.classList.toggle("is-active", isActive);
-          dot.setAttribute("aria-current", isActive ? "true" : "false");
-        });
-
-        if (status) {
-          status.textContent = `Showing ${slides[activeIndex].dataset.slideTitle} slide`;
-        }
-      };
-
-      const startAutoplay = () => {
-        if (autoplayId !== null || slides.length < 2 || isPaused()) return;
-
-        autoplayId = window.setInterval(() => {
-          if (isPaused() || slides.length < 2) return;
-          renderSlide(activeIndex + 1);
-        }, autoplayDelay);
-      };
-
-      const restartAutoplay = () => {
-        stopAutoplay();
-        startAutoplay();
-      };
-
-      const goToSlide = (nextIndex) => {
-        renderSlide(nextIndex);
-        restartAutoplay();
-      };
-
-      prevButton.addEventListener("click", () => {
-        markPointerInteraction();
-        goToSlide(activeIndex - 1);
-      });
-
-      nextButton.addEventListener("click", () => {
-        markPointerInteraction();
-        goToSlide(activeIndex + 1);
-      });
-
-      dots.forEach((dot, index) => {
-        dot.addEventListener("click", () => {
-          markPointerInteraction();
-          goToSlide(index);
-        });
-      });
-
-      carousel.addEventListener("mouseenter", () => {
-        isHoverPaused = true;
-        stopAutoplay();
-      });
-
-      carousel.addEventListener("mouseleave", () => {
-        isHoverPaused = false;
-        startAutoplay();
-      });
-
-      carousel.addEventListener("focusin", () => {
-        isFocusPaused = true;
-        carousel.classList.toggle("hero-carousel--keyboard-focus", hasKeyboardFocus());
-        stopAutoplay();
-      });
-
-      carousel.addEventListener("focusout", () => {
-        requestAnimationFrame(() => {
-          if (carousel.contains(document.activeElement)) {
-            carousel.classList.toggle("hero-carousel--keyboard-focus", hasKeyboardFocus());
-            return;
-          }
-
-          isFocusPaused = false;
-          carousel.classList.remove("hero-carousel--keyboard-focus");
-          startAutoplay();
-        });
-      });
-
-      window.addEventListener("keydown", (event) => {
-        if (event.key !== "Tab") return;
-        markKeyboardInteraction();
-        carousel.classList.toggle("hero-carousel--keyboard-focus", hasKeyboardFocus());
-      });
-
-      window.addEventListener("mousedown", markPointerInteraction);
-      window.addEventListener("pointerdown", markPointerInteraction);
-      window.addEventListener("touchstart", markPointerInteraction, { passive: true });
-
-      const handleKeydown = (event) => {
-        if (!carousel.contains(document.activeElement)) return;
-
-        if (event.key === "ArrowLeft") {
-          event.preventDefault();
-          goToSlide(activeIndex - 1);
-        }
-
-        if (event.key === "ArrowRight") {
-          event.preventDefault();
-          goToSlide(activeIndex + 1);
-        }
-      };
-
-      window.addEventListener("keydown", handleKeydown);
-
-      const handleTouchStart = (event) => {
-        if (!mobileCarouselViewport.matches) return;
-        const touch = event.changedTouches[0];
-        touchStartX = touch.clientX;
-        touchStartY = touch.clientY;
-      };
-
-      const handleTouchEnd = (event) => {
-        if (!mobileCarouselViewport.matches || touchStartX === null || touchStartY === null) return;
-        const touch = event.changedTouches[0];
-        const deltaX = touch.clientX - touchStartX;
-        const deltaY = touch.clientY - touchStartY;
-
-        touchStartX = null;
-        touchStartY = null;
-
-        if (Math.abs(deltaX) < swipeThreshold || Math.abs(deltaY) > Math.abs(deltaX)) return;
-
-        if (deltaX > 0) {
-          goToSlide(activeIndex - 1);
-          return;
-        }
-
-        goToSlide(activeIndex + 1);
-      };
-
-      carousel.addEventListener("touchstart", handleTouchStart, { passive: true });
-      carousel.addEventListener("touchend", handleTouchEnd, { passive: true });
-
-      renderSlide(activeIndex);
-      startAutoplay();
-
-      document.addEventListener("visibilitychange", () => {
-        if (document.hidden) {
-          stopAutoplay();
-          return;
-        }
-
-        startAutoplay();
-      });
     })();
   </script>
 </body>

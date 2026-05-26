@@ -91,6 +91,26 @@ svg {
   border: 0;
 }
 
+/* Service-led pages temporarily hide shop/category-led UI without deleting it. */
+.service-led-hidden {
+  display: none !important;
+}
+
+@media (min-width: 769px) {
+  .home-showcase--service-led {
+    align-items: stretch;
+  }
+
+  .home-showcase--service-led > .home-main-stack {
+    align-self: stretch;
+  }
+
+  .home-showcase--service-led > .home-main-stack > .hero-panel.hero-carousel {
+    height: 100%;
+    aspect-ratio: auto;
+  }
+}
+
 .container {
   width: min(1360px, calc(100% - 1.8rem));
   margin: 0 auto;
