@@ -67,12 +67,12 @@
         </a>
 
         <form class="search-bar" role="search" aria-label="Site search">
-          <label class="sr-only" for="site-search">Search products</label>
+          <label class="sr-only" for="site-search">Search services or health advice</label>
           <input
             id="site-search"
             type="search"
-            placeholder="Search medicine, vitamins, skincare, baby care..."
-            aria-label="Search products"
+            placeholder="Search services or health advice"
+            aria-label="Search services or health advice"
           />
           <button type="submit">
             <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -367,12 +367,12 @@
         />
       </a>
       <form class="compact-search" role="search" aria-label="Compact site search">
-        <label class="sr-only" for="compact-site-search">Search the website</label>
+        <label class="sr-only" for="compact-site-search">Search services or health advice</label>
         <input
           id="compact-site-search"
           type="search"
-          placeholder="Search medicines and services..."
-          aria-label="Search site"
+          placeholder="Search services or health advice"
+          aria-label="Search services or health advice"
         />
         <button type="submit">
           <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -611,108 +611,447 @@
         <div class="service-detail-section-head service-detail-section-head--compact">
           <span class="section-kicker">Condition guidance</span>
           <h2>Condition guidance</h2>
-          <p>Pharmacy First support for common conditions, subject to pharmacist assessment and the NHS clinical pathway.</p>
+          <p>
+            Richer support guides for the Pharmacy First conditions we offer, subject to pharmacist assessment and the
+            relevant NHS clinical pathway.
+          </p>
         </div>
-        <div class="service-detail-guidance-grid">
-          <article class="service-detail-guidance-card" id="sinusitis">
-            <span class="service-detail-condition-pill">12 years and over</span>
-            <h3>Sinusitis</h3>
-            <div class="service-detail-guidance-item">
-              <h4>What the pharmacist may ask</h4>
-              <p>How long symptoms have been present, any facial pain or fever, and what support you have already tried.</p>
+        <div class="pharmacy-first-guide-stack">
+          <article class="pharmacy-first-guide" id="sinusitis">
+            <div class="pharmacy-first-guide__header">
+              <div class="pharmacy-first-guide__intro">
+                <span class="service-detail-condition-pill">Usually age 12 years and over</span>
+                <h3>Sinusitis</h3>
+                <p>
+                  Sinusitis is swelling or inflammation of the sinuses, often after a cold or infection. It can cause
+                  pressure around the face, a blocked nose, and thick nasal discharge.
+                </p>
+              </div>
+              <p class="pharmacy-first-guide__eligibility">
+                Usually for patients aged 12 years and over, subject to pharmacist assessment and the relevant NHS
+                clinical pathway. Eligibility and treatment depend on symptoms, age, medical history, and clinical
+                suitability.
+              </p>
             </div>
-            <div class="service-detail-guidance-item">
-              <h4>What support may include</h4>
-              <p>Self-care advice, suitable over-the-counter options, or NHS treatment where the pathway fits and it is clinically appropriate.</p>
+
+            <div class="pharmacy-first-guide__grid">
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>Common symptoms</h4>
+                <ul class="service-detail-bullet-list pharmacy-first-guide__list">
+                  <li>Facial pain or pressure</li>
+                  <li>Blocked or runny nose</li>
+                  <li>Thick nasal discharge</li>
+                  <li>Reduced sense of smell</li>
+                  <li>Headache or pressure around the cheeks or forehead</li>
+                </ul>
+              </article>
+
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>How the pharmacist can help</h4>
+                <p>
+                  The pharmacist will ask about your symptoms, how long they have been present, your age, medical
+                  history, current medicines, and any red flag symptoms.
+                </p>
+              </article>
+
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>What support may include</h4>
+                <ul class="service-detail-bullet-list pharmacy-first-guide__list">
+                  <li>Self-care advice</li>
+                  <li>Suitable pharmacy options</li>
+                  <li>NHS treatment where clinically appropriate</li>
+                  <li>Referral or signposting if another service is needed</li>
+                </ul>
+              </article>
+
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>Self-care tips</h4>
+                <ul class="service-detail-bullet-list pharmacy-first-guide__list">
+                  <li>Rest and drink fluids</li>
+                  <li>Use simple pain relief if suitable</li>
+                  <li>Consider saline nasal rinses or steam-style comfort measures if suitable</li>
+                  <li>Avoid irritants such as smoke</li>
+                </ul>
+              </article>
             </div>
-            <div class="service-detail-guidance-item">
-              <h4>Referral or safety note</h4>
-              <p>If symptoms are severe, worsening, or outside the pathway, we may refer you to your GP, NHS 111, or another NHS service.</p>
+
+            <div class="pharmacy-first-guide__footer">
+              <div class="pharmacy-first-guide__urgent">
+                <h4>When to seek urgent help</h4>
+                <p>
+                  Seek medical advice urgently if symptoms are severe, worsening, linked with swelling around the eye,
+                  confusion, very high fever, or you feel seriously unwell.
+                </p>
+              </div>
+              <div class="pharmacy-first-guide__cta">
+                <a href="#footer-help-card" class="service-detail-button service-detail-button--primary">Book a Pharmacy First request</a>
+              </div>
             </div>
           </article>
 
-          <article class="service-detail-guidance-card" id="sore-throat">
-            <span class="service-detail-condition-pill">5 years and over</span>
-            <h3>Sore throat</h3>
-            <div class="service-detail-guidance-item">
-              <h4>What the pharmacist may ask</h4>
-              <p>When symptoms started, whether swallowing is difficult, and any fever, rash, or other new symptoms.</p>
+          <article class="pharmacy-first-guide" id="sore-throat">
+            <div class="pharmacy-first-guide__header">
+              <div class="pharmacy-first-guide__intro">
+                <span class="service-detail-condition-pill">Usually age 5 years and over</span>
+                <h3>Sore throat</h3>
+                <p>
+                  A sore throat is pain, irritation, or discomfort in the throat, often worse when swallowing. It is
+                  commonly caused by viral infections but can sometimes need clinical assessment.
+                </p>
+              </div>
+              <p class="pharmacy-first-guide__eligibility">
+                Usually for patients aged 5 years and over, subject to pharmacist assessment and the relevant NHS
+                clinical pathway. Eligibility and treatment depend on symptoms, age, medical history, and clinical
+                suitability.
+              </p>
             </div>
-            <div class="service-detail-guidance-item">
-              <h4>What support may include</h4>
-              <p>Advice on fluids and symptom relief, suitable over-the-counter options, or NHS treatment if the pathway criteria are met.</p>
+
+            <div class="pharmacy-first-guide__grid">
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>Common symptoms</h4>
+                <ul class="service-detail-bullet-list pharmacy-first-guide__list">
+                  <li>Pain or discomfort in the throat</li>
+                  <li>Pain when swallowing</li>
+                  <li>Redness at the back of the throat</li>
+                  <li>Swollen glands</li>
+                  <li>Fever or feeling generally unwell</li>
+                  <li>Hoarse voice</li>
+                </ul>
+              </article>
+
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>How the pharmacist can help</h4>
+                <p>
+                  The pharmacist may ask about fever, cough, swollen glands, tonsil appearance, how long symptoms have
+                  been present, and whether there are any warning signs.
+                </p>
+              </article>
+
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>What support may include</h4>
+                <ul class="service-detail-bullet-list pharmacy-first-guide__list">
+                  <li>Self-care advice</li>
+                  <li>Advice on suitable symptom relief</li>
+                  <li>NHS treatment where clinically appropriate</li>
+                  <li>Referral or signposting if symptoms need further care</li>
+                </ul>
+              </article>
+
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>Self-care tips</h4>
+                <ul class="service-detail-bullet-list pharmacy-first-guide__list">
+                  <li>Drink plenty of fluids</li>
+                  <li>Rest your voice where possible</li>
+                  <li>Use simple pain relief if suitable</li>
+                  <li>Avoid smoking or irritants</li>
+                  <li>Try soothing warm drinks if helpful</li>
+                </ul>
+              </article>
             </div>
-            <div class="service-detail-guidance-item">
-              <h4>Referral or safety note</h4>
-              <p>We may signpost if symptoms suggest another cause, are severe, or need a different NHS service.</p>
+
+            <div class="pharmacy-first-guide__footer">
+              <div class="pharmacy-first-guide__urgent">
+                <h4>When to seek urgent help</h4>
+                <p>
+                  Seek urgent advice if you have difficulty breathing, cannot swallow fluids, are drooling, have severe
+                  pain, symptoms are worsening quickly, or you feel seriously unwell.
+                </p>
+              </div>
+              <div class="pharmacy-first-guide__cta">
+                <a href="#footer-help-card" class="service-detail-button service-detail-button--primary">Book a Pharmacy First request</a>
+              </div>
             </div>
           </article>
 
-          <article class="service-detail-guidance-card" id="infected-insect-bites">
-            <span class="service-detail-condition-pill">1 year and over</span>
-            <h3>Infected insect bites</h3>
-            <div class="service-detail-guidance-item">
-              <h4>What the pharmacist may ask</h4>
-              <p>When the bite happened, whether redness or swelling is spreading, and if there is pain, heat, or discharge.</p>
+          <article class="pharmacy-first-guide" id="infected-insect-bites">
+            <div class="pharmacy-first-guide__header">
+              <div class="pharmacy-first-guide__intro">
+                <span class="service-detail-condition-pill">Usually age 1 year and over</span>
+                <h3>Infected insect bites</h3>
+                <p>
+                  Insect bites or stings can sometimes become infected, especially if the area becomes increasingly red,
+                  swollen, painful, or warm.
+                </p>
+              </div>
+              <p class="pharmacy-first-guide__eligibility">
+                Usually for patients aged 1 year and over, subject to pharmacist assessment and the relevant NHS
+                clinical pathway. Eligibility and treatment depend on symptoms, age, medical history, and clinical
+                suitability.
+              </p>
             </div>
-            <div class="service-detail-guidance-item">
-              <h4>What support may include</h4>
-              <p>Advice on skin care, symptom relief, and NHS treatment where the bite matches the Pharmacy First pathway.</p>
+
+            <div class="pharmacy-first-guide__grid">
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>Common symptoms</h4>
+                <ul class="service-detail-bullet-list pharmacy-first-guide__list">
+                  <li>Increasing redness around the bite</li>
+                  <li>Swelling or warmth</li>
+                  <li>Pain or tenderness</li>
+                  <li>Skin that feels hot</li>
+                  <li>Discharge or signs of infection</li>
+                  <li>Symptoms getting worse after the initial bite or sting</li>
+                </ul>
+              </article>
+
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>How the pharmacist can help</h4>
+                <p>
+                  The pharmacist will ask when the bite happened, how the area has changed, whether symptoms are
+                  spreading, and whether you have a fever or feel unwell.
+                </p>
+              </article>
+
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>What support may include</h4>
+                <ul class="service-detail-bullet-list pharmacy-first-guide__list">
+                  <li>Advice on cleaning and caring for the area</li>
+                  <li>Suitable pharmacy options</li>
+                  <li>NHS treatment where clinically appropriate</li>
+                  <li>Referral or signposting if the infection appears more serious</li>
+                </ul>
+              </article>
+
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>Self-care tips</h4>
+                <ul class="service-detail-bullet-list pharmacy-first-guide__list">
+                  <li>Avoid scratching</li>
+                  <li>Keep the area clean</li>
+                  <li>Use a cool compress if suitable</li>
+                  <li>Watch for spreading redness</li>
+                  <li>Seek advice if symptoms worsen</li>
+                </ul>
+              </article>
             </div>
-            <div class="service-detail-guidance-item">
-              <h4>Referral or safety note</h4>
-              <p>Urgent swelling, severe pain, or symptoms outside the pathway may need GP, urgent care, or NHS 111 support.</p>
+
+            <div class="pharmacy-first-guide__footer">
+              <div class="pharmacy-first-guide__urgent">
+                <h4>When to seek urgent help</h4>
+                <p>
+                  Seek urgent care if redness spreads quickly, you develop fever, red streaks, severe swelling,
+                  breathing difficulty, or signs of an allergic reaction.
+                </p>
+              </div>
+              <div class="pharmacy-first-guide__cta">
+                <a href="#footer-help-card" class="service-detail-button service-detail-button--primary">Book a Pharmacy First request</a>
+              </div>
             </div>
           </article>
 
-          <article class="service-detail-guidance-card" id="impetigo">
-            <span class="service-detail-condition-pill">1 year and over</span>
-            <h3>Impetigo</h3>
-            <div class="service-detail-guidance-item">
-              <h4>What the pharmacist may ask</h4>
-              <p>Where the rash is, how it has changed, whether there is crusting or soreness, and if treatment has already been tried.</p>
+          <article class="pharmacy-first-guide" id="impetigo">
+            <div class="pharmacy-first-guide__header">
+              <div class="pharmacy-first-guide__intro">
+                <span class="service-detail-condition-pill">Usually age 1 year and over</span>
+                <h3>Impetigo</h3>
+                <p>
+                  Impetigo is a contagious skin infection that can cause red sores or blisters, often with golden
+                  crusting. It can spread through close contact.
+                </p>
+              </div>
+              <p class="pharmacy-first-guide__eligibility">
+                Usually for patients aged 1 year and over, subject to pharmacist assessment and the relevant NHS
+                clinical pathway. Eligibility and treatment depend on symptoms, age, medical history, and clinical
+                suitability.
+              </p>
             </div>
-            <div class="service-detail-guidance-item">
-              <h4>What support may include</h4>
-              <p>Hygiene advice, guidance to help avoid spreading infection, and NHS treatment if the assessment supports the pathway.</p>
+
+            <div class="pharmacy-first-guide__grid">
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>Common symptoms</h4>
+                <ul class="service-detail-bullet-list pharmacy-first-guide__list">
+                  <li>Red sores or blisters</li>
+                  <li>Golden or honey-coloured crusting</li>
+                  <li>Itchy or sore skin</li>
+                  <li>Patches around the face, hands, or exposed skin</li>
+                  <li>Symptoms spreading to nearby areas</li>
+                </ul>
+              </article>
+
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>How the pharmacist can help</h4>
+                <p>
+                  The pharmacist will ask about the appearance of the skin, where the patches are, whether they are
+                  spreading, and whether anyone else has similar symptoms.
+                </p>
+              </article>
+
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>What support may include</h4>
+                <ul class="service-detail-bullet-list pharmacy-first-guide__list">
+                  <li>Hygiene and self-care advice</li>
+                  <li>Advice on reducing spread</li>
+                  <li>NHS treatment where clinically appropriate</li>
+                  <li>Referral or signposting if symptoms are widespread or severe</li>
+                </ul>
+              </article>
+
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>Self-care tips</h4>
+                <ul class="service-detail-bullet-list pharmacy-first-guide__list">
+                  <li>Avoid touching or scratching the area</li>
+                  <li>Wash hands regularly</li>
+                  <li>Avoid sharing towels or face cloths</li>
+                  <li>Keep affected areas clean</li>
+                  <li>Follow pharmacist advice to reduce spread</li>
+                </ul>
+              </article>
             </div>
-            <div class="service-detail-guidance-item">
-              <h4>Referral or safety note</h4>
-              <p>Widespread symptoms, severe infection concerns, or uncertainty about the diagnosis may need a different NHS route.</p>
+
+            <div class="pharmacy-first-guide__footer">
+              <div class="pharmacy-first-guide__urgent">
+                <h4>When to seek urgent help</h4>
+                <p>
+                  Seek urgent advice if the infection is spreading quickly, affects the eyes, is widespread, you feel
+                  very unwell, or symptoms are not improving.
+                </p>
+              </div>
+              <div class="pharmacy-first-guide__cta">
+                <a href="#footer-help-card" class="service-detail-button service-detail-button--primary">Book a Pharmacy First request</a>
+              </div>
             </div>
           </article>
 
-          <article class="service-detail-guidance-card" id="shingles">
-            <span class="service-detail-condition-pill">18 years and over</span>
-            <h3>Shingles</h3>
-            <div class="service-detail-guidance-item">
-              <h4>What the pharmacist may ask</h4>
-              <p>When the rash or pain began, where it is located, and whether you have eye symptoms or feel generally unwell.</p>
+          <article class="pharmacy-first-guide" id="shingles">
+            <div class="pharmacy-first-guide__header">
+              <div class="pharmacy-first-guide__intro">
+                <span class="service-detail-condition-pill">Usually age 18 years and over</span>
+                <h3>Shingles</h3>
+                <p>
+                  Shingles is a viral infection that usually causes a painful rash or blisters on one side of the body.
+                  It can be more serious in some people.
+                </p>
+              </div>
+              <p class="pharmacy-first-guide__eligibility">
+                Usually for adults aged 18 years and over, subject to pharmacist assessment and the relevant NHS
+                clinical pathway. Eligibility and treatment depend on symptoms, age, medical history, and clinical
+                suitability.
+              </p>
             </div>
-            <div class="service-detail-guidance-item">
-              <h4>What support may include</h4>
-              <p>Advice on symptom relief and NHS treatment where the timing, symptoms, and pathway criteria are suitable.</p>
+
+            <div class="pharmacy-first-guide__grid">
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>Common symptoms</h4>
+                <ul class="service-detail-bullet-list pharmacy-first-guide__list">
+                  <li>Pain, tingling, or burning on one side of the body</li>
+                  <li>A rash or blisters in a band-like area</li>
+                  <li>Skin sensitivity</li>
+                  <li>Feeling tired or unwell</li>
+                  <li>Headache or fever in some cases</li>
+                </ul>
+              </article>
+
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>How the pharmacist can help</h4>
+                <p>
+                  The pharmacist will ask when symptoms started, where the rash is, whether blisters are present, your
+                  age, medical history, and whether you are at higher risk.
+                </p>
+              </article>
+
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>What support may include</h4>
+                <ul class="service-detail-bullet-list pharmacy-first-guide__list">
+                  <li>Self-care advice</li>
+                  <li>Advice on protecting others where needed</li>
+                  <li>NHS treatment where clinically appropriate</li>
+                  <li>Referral or signposting if symptoms need urgent review</li>
+                </ul>
+              </article>
+
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>Self-care tips</h4>
+                <ul class="service-detail-bullet-list pharmacy-first-guide__list">
+                  <li>Keep the rash clean and dry</li>
+                  <li>Wear loose clothing</li>
+                  <li>Avoid scratching</li>
+                  <li>Avoid close contact with people at higher risk until advised</li>
+                  <li>Use simple pain relief if suitable</li>
+                </ul>
+              </article>
             </div>
-            <div class="service-detail-guidance-item">
-              <h4>Referral or safety note</h4>
-              <p>Eye involvement, severe pain, or signs of complications need urgent assessment through the appropriate NHS service.</p>
+
+            <div class="pharmacy-first-guide__footer">
+              <div class="pharmacy-first-guide__urgent">
+                <h4>When to seek urgent help</h4>
+                <p>
+                  Seek urgent advice if shingles affects the eye or face, you are pregnant, immunosuppressed, symptoms
+                  are severe, or you feel very unwell.
+                </p>
+              </div>
+              <div class="pharmacy-first-guide__cta">
+                <a href="#footer-help-card" class="service-detail-button service-detail-button--primary">Book a Pharmacy First request</a>
+              </div>
             </div>
           </article>
 
-          <article class="service-detail-guidance-card" id="uti-women">
-            <span class="service-detail-condition-pill">Women aged 16 to 64</span>
-            <h3>Uncomplicated urinary tract infections in women</h3>
-            <div class="service-detail-guidance-item">
-              <h4>What the pharmacist may ask</h4>
-              <p>What urinary symptoms you have, how long they have been present, and whether you have had similar symptoms before.</p>
+          <article class="pharmacy-first-guide" id="uti-women">
+            <div class="pharmacy-first-guide__header">
+              <div class="pharmacy-first-guide__intro">
+                <span class="service-detail-condition-pill">Women aged 16 to 64 years</span>
+                <h3>UTIs in women</h3>
+                <p>
+                  A urinary tract infection can cause discomfort when passing urine, needing to pass urine more often,
+                  or lower abdominal discomfort. Pharmacy First can support uncomplicated UTIs in eligible women.
+                </p>
+              </div>
+              <p class="pharmacy-first-guide__eligibility">
+                Usually for women aged 16 to 64 years, subject to pharmacist assessment and the relevant NHS clinical
+                pathway. Eligibility and treatment depend on symptoms, age, medical history, and clinical suitability.
+              </p>
             </div>
-            <div class="service-detail-guidance-item">
-              <h4>What support may include</h4>
-              <p>Advice on fluids and symptom care, suitable over-the-counter options, or NHS treatment where the pathway and assessment allow.</p>
+
+            <div class="pharmacy-first-guide__grid">
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>Common symptoms</h4>
+                <ul class="service-detail-bullet-list pharmacy-first-guide__list">
+                  <li>Pain or burning when passing urine</li>
+                  <li>Passing urine more often than usual</li>
+                  <li>Urgent need to pass urine</li>
+                  <li>Lower tummy discomfort</li>
+                  <li>Cloudy or strong-smelling urine</li>
+                </ul>
+              </article>
+
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>How the pharmacist can help</h4>
+                <p>
+                  The pharmacist will ask about your symptoms, how long they have been present, pregnancy status if
+                  relevant, medical history, current medicines, and whether there are signs of a more serious infection.
+                </p>
+              </article>
+
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>What support may include</h4>
+                <ul class="service-detail-bullet-list pharmacy-first-guide__list">
+                  <li>Self-care advice</li>
+                  <li>Advice on hydration and symptom monitoring</li>
+                  <li>NHS treatment where clinically appropriate</li>
+                  <li>Referral or signposting if symptoms suggest a complicated infection or another service is needed</li>
+                </ul>
+              </article>
+
+              <article class="pharmacy-first-guide__mini-card">
+                <h4>Self-care tips</h4>
+                <ul class="service-detail-bullet-list pharmacy-first-guide__list">
+                  <li>Drink fluids as usual</li>
+                  <li>Avoid delaying urination</li>
+                  <li>Use simple pain relief if suitable</li>
+                  <li>Monitor symptoms closely</li>
+                  <li>Seek further advice if symptoms worsen</li>
+                </ul>
+              </article>
             </div>
-            <div class="service-detail-guidance-item">
-              <h4>Referral or safety note</h4>
-              <p>Fever, flank pain, pregnancy, recurrent symptoms, or signs of a more serious infection may need another NHS route.</p>
+
+            <div class="pharmacy-first-guide__footer">
+              <div class="pharmacy-first-guide__urgent">
+                <h4>When to seek urgent help</h4>
+                <p>
+                  Seek urgent advice if you have back or flank pain, fever, chills, blood in urine, vomiting,
+                  pregnancy, recurrent infections, or feel seriously unwell.
+                </p>
+              </div>
+              <div class="pharmacy-first-guide__cta">
+                <a href="#footer-help-card" class="service-detail-button service-detail-button--primary">Book a Pharmacy First request</a>
+              </div>
             </div>
           </article>
         </div>
