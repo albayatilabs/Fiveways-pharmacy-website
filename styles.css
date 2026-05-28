@@ -462,7 +462,8 @@ svg {
 }
 
 .category-nav > a,
-.category-nav > .category-pill-dropdown > a {
+.category-nav > .category-pill-dropdown > a,
+.category-nav > .category-pill-dropdown > button {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
@@ -476,23 +477,37 @@ svg {
   font-weight: 700;
 }
 
+.category-nav > .category-pill-dropdown > button {
+  appearance: none;
+  border: 1px solid rgba(var(--bordersoft-rgb), 0.88);
+  font-family: inherit;
+  line-height: inherit;
+  cursor: pointer;
+}
+
 .category-nav > a.category-pill-popular {
   display: none;
 }
 
 .category-nav > a svg,
-.category-nav > .category-pill-dropdown > a svg {
+.category-nav > .category-pill-dropdown > a svg,
+.category-nav > .category-pill-dropdown > button svg {
   width: 16px;
   height: 16px;
   flex-shrink: 0;
+  fill: none;
+  stroke: currentColor;
   stroke-width: 1.85;
   color: var(--deep-teal);
 }
 
 .category-nav > a:hover,
 .category-nav > .category-pill-dropdown > a:hover,
+.category-nav > .category-pill-dropdown > button:hover,
 .category-pill-dropdown:hover > a,
-.category-pill-dropdown:focus-within > a {
+.category-pill-dropdown:hover > button,
+.category-pill-dropdown:focus-within > a,
+.category-pill-dropdown:focus-within > button {
   transform: translateY(-1px);
   border-color: rgba(var(--secondary-rgb), 0.95);
   box-shadow: 0 10px 18px rgba(var(--textdark-rgb), 0.06);
@@ -559,7 +574,14 @@ svg {
   height: 0.56rem;
 }
 
+.category-pill-dropdown--prescriptions::after {
+  left: -0.45rem;
+  width: calc(100% + 0.9rem);
+  height: 0.96rem;
+}
+
 .category-pill-dropdown-menu--compact {
+  top: calc(100% + 0.2rem);
   width: 15.5rem;
   min-width: 15.5rem;
   padding: 0.48rem;
@@ -4353,6 +4375,17 @@ main {
   padding-left: 0.62rem;
 }
 
+.service-detail-page--stop-smoking .stop-smoking-understanding-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.84rem;
+  margin-top: 0.94rem;
+}
+
+.service-detail-page--stop-smoking .stop-smoking-understanding-grid .service-detail-guidance-card {
+  height: 100%;
+}
+
 .service-detail-panel,
 .service-detail-info-card,
 .service-detail-cta-panel {
@@ -4797,6 +4830,10 @@ main {
     grid-template-columns: 1fr;
   }
 
+  .service-detail-page--stop-smoking .stop-smoking-understanding-grid {
+    grid-template-columns: 1fr;
+  }
+
   .service-detail-page--emergency-prescriptions .prescriptions-address--emergency {
     justify-self: stretch;
   }
@@ -4841,6 +4878,9 @@ main {
   .service-detail-page--delivery-privacy .service-detail-section--mobile-offset .service-detail-alert,
   .service-detail-page--delivery-privacy .service-detail-section--mobile-offset .service-detail-section-head,
   .service-detail-page--delivery-privacy .service-detail-section--mobile-offset .service-detail-faq-list,
+  .service-detail-page--stop-smoking .service-detail-section--mobile-offset .service-detail-alert,
+  .service-detail-page--stop-smoking .service-detail-section--mobile-offset .service-detail-section-head,
+  .service-detail-page--stop-smoking .service-detail-section--mobile-offset .service-detail-faq-list,
   .service-detail-page--prescriptions .service-detail-section--mobile-offset .service-detail-alert,
   .service-detail-page--prescriptions .service-detail-section--mobile-offset .service-detail-section-head,
   .service-detail-page--prescriptions .service-detail-section--mobile-offset .service-detail-faq-list {
@@ -5001,6 +5041,9 @@ main {
   .service-detail-page--delivery-privacy .service-detail-section--mobile-offset .service-detail-alert,
   .service-detail-page--delivery-privacy .service-detail-section--mobile-offset .service-detail-section-head,
   .service-detail-page--delivery-privacy .service-detail-section--mobile-offset .service-detail-faq-list,
+  .service-detail-page--stop-smoking .service-detail-section--mobile-offset .service-detail-alert,
+  .service-detail-page--stop-smoking .service-detail-section--mobile-offset .service-detail-section-head,
+  .service-detail-page--stop-smoking .service-detail-section--mobile-offset .service-detail-faq-list,
   .service-detail-page--prescriptions .service-detail-section--mobile-offset .service-detail-alert,
   .service-detail-page--prescriptions .service-detail-section--mobile-offset .service-detail-section-head,
   .service-detail-page--prescriptions .service-detail-section--mobile-offset .service-detail-faq-list {
@@ -5400,6 +5443,7 @@ main {
   .category-nav > a,
   .category-nav > .category-pill-dropdown,
   .category-nav > .category-pill-dropdown > a,
+  .category-nav > .category-pill-dropdown > button,
   .quick-nav p,
   .quick-pill {
     flex: 0 0 auto;
@@ -5495,7 +5539,8 @@ main {
     flex: 0 0 auto;
   }
 
-  .category-nav a {
+  .category-nav a,
+  .category-nav button {
     min-height: 35px;
     padding: 0.42rem 0.66rem;
     font-size: 0.79rem;
@@ -6434,6 +6479,11 @@ main {
     gap: 0.46rem;
   }
 
+  .mobile-menu-group {
+    display: grid;
+    gap: 0.42rem;
+  }
+
   .mobile-menu-link {
     display: flex;
     align-items: center;
@@ -6449,6 +6499,16 @@ main {
     box-shadow: 0 10px 20px rgba(var(--textdark-rgb), 0.04);
   }
 
+  .mobile-menu-link--toggle {
+    width: 100%;
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .mobile-menu-link--toggle::-webkit-details-marker {
+    display: none;
+  }
+
   .mobile-menu-link::after {
     content: "";
     width: 0.42rem;
@@ -6457,6 +6517,29 @@ main {
     border-top: 1.5px solid rgba(var(--textdark-rgb), 0.42);
     border-right: 1.5px solid rgba(var(--textdark-rgb), 0.42);
     transform: rotate(45deg);
+  }
+
+  .mobile-menu-link--toggle::after {
+    transform: rotate(135deg);
+    transition: transform 180ms ease;
+  }
+
+  .mobile-menu-group[open] > .mobile-menu-link--toggle::after {
+    transform: rotate(-45deg);
+  }
+
+  .mobile-menu-submenu {
+    display: grid;
+    gap: 0.4rem;
+    padding-left: 0.58rem;
+  }
+
+  .mobile-menu-submenu .mobile-menu-link {
+    min-height: 42px;
+    padding: 0.76rem 0.92rem;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(var(--bgsoft-rgb), 0.84), rgba(255, 255, 255, 0.94));
+    box-shadow: 0 8px 18px rgba(var(--textdark-rgb), 0.035);
   }
 
   .mobile-menu-help-card {
@@ -6545,6 +6628,7 @@ main {
   .category-pill-dropdown,
   .category-nav > a,
   .category-nav > .category-pill-dropdown > a,
+  .category-nav > .category-pill-dropdown > button,
   .compact-header-inner,
   .compact-search,
   .compact-search input,
@@ -6819,11 +6903,12 @@ main {
     scroll-padding-inline: 0.72rem;
   }
 
-  .category-nav > a,
-  .category-nav > .category-pill-dropdown > a {
-    min-height: 36px;
-    padding: 0.44rem 0.74rem;
-  }
+.category-nav > a,
+.category-nav > .category-pill-dropdown > a,
+.category-nav > .category-pill-dropdown > button {
+  min-height: 36px;
+  padding: 0.44rem 0.74rem;
+}
 
   .category-nav > a:last-child {
     margin-right: 0.22rem;

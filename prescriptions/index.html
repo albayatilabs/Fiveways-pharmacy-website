@@ -6,7 +6,7 @@
   <title>Prescriptions | Five Ways Pharmacy</title>
     <meta
     name="description"
-    content="Choose repeat prescription support or emergency prescription support with Five Ways Pharmacy."
+    content="Choose repeat prescription support or emergency supply support with Five Ways Pharmacy."
   />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -204,7 +204,7 @@
             </div>
           </div>
           <div class="category-pill-dropdown category-pill-dropdown--compact category-pill-dropdown--prescriptions">
-            <a href="../prescriptions/" aria-haspopup="true">
+            <button type="button" aria-haspopup="true" aria-expanded="false">
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M8 5.5h8v13H8z" />
                 <path d="M10 3.75h4" />
@@ -212,10 +212,10 @@
                 <path d="M10 13h4" />
               </svg>
               <span>Prescriptions</span>
-            </a>
+            </button>
 
             <div class="category-pill-dropdown-menu category-pill-dropdown-menu--compact" aria-label="Prescriptions menu">
-              <a href="../emergency-prescriptions/" class="category-pill-dropdown-link">Emergency prescriptions</a>
+              <a href="../emergency-prescriptions/" class="category-pill-dropdown-link">Emergency supply</a>
               <a href="../repeat-prescriptions/" class="category-pill-dropdown-link">Repeat prescriptions</a>
             </div>
           </div>
@@ -312,7 +312,13 @@
               <a href="../umbrella-services/" class="mobile-menu-link">Umbrella Services</a>
               <a href="../weight-loss-support/" class="mobile-menu-link">Weight Loss</a>
               <a href="../nhs-contraception-services/" class="mobile-menu-link">NHS Contraception Services</a>
-              <a href="../prescriptions/" class="mobile-menu-link">Prescriptions</a>
+              <details class="mobile-menu-group">
+                <summary class="mobile-menu-link mobile-menu-link--toggle">Prescriptions</summary>
+                <div class="mobile-menu-submenu">
+                  <a href="../emergency-prescriptions/" class="mobile-menu-link">Emergency supply</a>
+                  <a href="../repeat-prescriptions/" class="mobile-menu-link">Repeat prescriptions</a>
+                </div>
+              </details>
               <a href="../health-advice/" class="mobile-menu-link">Health Advice</a>
               <a href="../index.html#shop-by-category" class="mobile-menu-link service-led-hidden" hidden>Over-the-counter Purchases</a>
               <a href="../covid-vaccines/" class="mobile-menu-link">COVID Vaccines (Spring / Autumn)</a>
@@ -415,7 +421,7 @@
           <h1>Prescriptions</h1>
           <p>
             Choose the prescription route you need. Use repeat prescription support if you want to nominate Five Ways
-            Pharmacy for regular medication and free delivery, or use the emergency prescription route for one-off urgent
+            Pharmacy for regular medication and free delivery, or use the emergency supply route for one-off urgent
             supply through NHS 111 online.
           </p>
           <div class="service-detail-pill-row" aria-label="Prescription service highlights">
@@ -436,7 +442,7 @@
             </a>
 
             <a href="../emergency-prescriptions/" class="prescriptions-route-card">
-              <span class="section-kicker">Emergency prescriptions</span>
+              <span class="section-kicker">Emergency supply</span>
               <h2>Use NHS 111 online for urgent supply</h2>
               <p>
                 If you have completely run out of regular repeat medication, NHS 111 online may help with a limited urgent
@@ -453,7 +459,7 @@
               <p class="service-detail-hero-card__eyebrow">At a glance</p>
               <ul class="service-detail-checklist">
                 <li>Repeat prescriptions are for regular ongoing medication support</li>
-                <li>Emergency prescriptions are for one-off urgent NHS 111 supply requests</li>
+                <li>Emergency supply is for one-off urgent NHS 111 supply requests</li>
                 <li>Free delivery applies to repeat prescription medication through the online pharmacy service</li>
                 <li>Choose the route that best matches the help you need today</li>
               </ul>
@@ -466,7 +472,7 @@
               <h2>Two prescription routes</h2>
               <p>
                 Use repeat prescription support to nominate Five Ways Pharmacy for regular medication. Use emergency
-                prescription support for one-off urgent supply through the NHS service.
+                supply support for one-off urgent supply through the NHS service.
               </p>
             </div>
             <ul class="service-detail-bullet-list">
@@ -492,7 +498,7 @@
           <h2>Not sure which route you need?</h2>
           <p>
             Choose Repeat prescriptions if you take regular medication and want Five Ways Pharmacy to receive and deliver
-            your repeat prescriptions. Choose Emergency prescriptions if you have completely run out of regular repeat
+            your repeat prescriptions. Choose Emergency supply if you have completely run out of regular repeat
             medication and need one-off urgent NHS 111 support.
           </p>
         </div>
@@ -811,6 +817,7 @@
       const menuOverlay = document.querySelector(".mobile-menu-overlay");
       const menuClose = document.querySelector(".mobile-menu-close");
       const menuCloseButton = document.querySelector(".mobile-menu-close-button");
+      const menuGroups = menuShell.querySelectorAll(".mobile-menu-group");
 
       if (!menuToggle || !menuShell || !menuDrawer || !menuOverlay || !menuClose) return;
 
@@ -822,6 +829,11 @@
         menuShell.setAttribute("aria-hidden", "true");
         menuDrawer.setAttribute("aria-hidden", "true");
         menuToggle.setAttribute("aria-expanded", "false");
+        menuGroups.forEach((group) => {
+          if (group instanceof HTMLDetailsElement) {
+            group.open = false;
+          }
+        });
 
         if (restoreFocus && lastFocusedElement instanceof HTMLElement) {
           lastFocusedElement.focus();
